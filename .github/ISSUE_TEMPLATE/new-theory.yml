@@ -1,5 +1,5 @@
 name: 新理论投稿
-description: 发现一个过日子方法？来让总部研究一下。不需要懂代码。
+description: 发现一个过日子方法？一起来算算值不值。不需要懂代码。
 title: '[新理论] '
 body:
   - type: markdown
@@ -32,7 +32,7 @@ body:
   - type: textarea
     id: compatibility
     attributes:
-      label: 为什么你觉得符合过学
+      label: 为什么你觉得符合“过学”
       description: 它保住或改善了什么生活品质，又砍掉了什么无效成本？
     validations:
       required: true

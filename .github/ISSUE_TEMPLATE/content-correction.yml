@@ -11,7 +11,7 @@ body:
     id: page
     attributes:
       label: 哪个页面
-      description: 提供网页链接、文章名或文件路径。
+      description: 提供文章链接、章节名或文件路径。
     validations:
       required: true
   - type: textarea
@@ -25,7 +25,7 @@ body:
     id: problem
     attributes:
       label: 问题是什么
-      description: 是事实不准、出处不清、边界遗漏、健康安全风险，还是页面显示问题？
+      description: 是事实不准、出处不清、边界遗漏、健康安全风险，还是排版问题？
     validations:
       required: true
   - type: textarea
