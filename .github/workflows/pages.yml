@@ -31,6 +31,12 @@ jobs:
           fi
       - name: 内容检查与静态构建
         run: npm run build
+      - name: 保存本次构建的依赖锁文件
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-lock
+          path: package-lock.json
+          retention-days: 7
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
@@ -40,6 +46,7 @@ jobs:
     if: github.event_name != 'pull_request'
     needs: build
     permissions:
+      contents: read
       pages: write
       id-token: write
     environment:
@@ -47,6 +54,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v5
       - name: 部署官网
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: 验收已发布页面与资源
+        timeout-minutes: 5
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python scripts/verify-site.py

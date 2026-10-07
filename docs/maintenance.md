@@ -50,9 +50,11 @@ npm run preview
 2. 进入仓库 **Settings → Pages → Build and deployment → Source**，选择 **GitHub Actions**。项目已有工作流，无需另建模板。
 3. 推送本项目，包括 `.github/workflows/pages.yml`，以及首次成功安装后生成的 `package-lock.json`。如果尚无锁文件，工作流首次使用 `npm install`；有锁文件时使用 `npm ci`。
 4. 首次可以在 **Actions → 发布过学官网 → Run workflow** 手动运行。之后推送到 `main` 会自动发布。
-5. 等构建和部署两项都成功，再访问 `https://allen-boan.github.io/guoxue/`。
+5. 等构建、部署和「验收已发布页面与资源」都成功，再访问 `https://allen-boan.github.io/guoxue/`。验收会检查 18 个公开页面以及首页的样式、脚本资源。
 
-工作流使用最小权限：构建只读仓库；发布阶段需要 `pages: write` 与 `id-token: write`。PR 只做构建，不触发发布。
+工作流使用最小权限：构建只读仓库；发布阶段读取验收脚本，并需要 `pages: write` 与 `id-token: write`。PR 只做构建，不触发发布。
+
+首次构建生成的锁文件会保存到 Actions 的 `dependency-lock` 构建产物中。将其中的 `package-lock.json` 提交到源码仓库后，后续构建自动使用 `npm ci`。
 
 ### 由本会话协助上传时
 

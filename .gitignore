@@ -1,4 +1,5 @@
 node_modules/
+__pycache__/
 docs/.vitepress/cache/
 docs/.vitepress/dist/
 .DS_Store
