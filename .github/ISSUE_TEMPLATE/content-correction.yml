@@ -25,7 +25,7 @@ body:
     id: problem
     attributes:
       label: 问题是什么
-      description: 是事实不准、出处不清、边界遗漏、健康安全风险，还是排版问题？
+      description: 是事实或出处问题、成本与品质解释不对、边界遗漏、健康安全风险、重复内容，还是排版问题？
     validations:
       required: true
   - type: textarea

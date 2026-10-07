@@ -1,0 +1,3134 @@
+schema_version: '1.0'
+version: 0.1.0
+language: zh-CN
+updated_at: '2026-10-07'
+constitution_version: 0.2.0
+theories_version: 0.4.0
+review_note: 本版为编辑整理；收录状态与审核进度分别记录，实践纳入不等于医学认证或完整网络主张已核验。
+source_type_definitions:
+  internet_theory: 引用已有网络理论，作者与来源通过 theory_id 查询，不自动提升原理论状态。
+  guoxue_practice: 本项目按总纲整理的生活方法，不宣称全球首创。
+dimension_note: 仅记录相关维度，变化方向见 cost_changes 与 quality_effects；不重复计账，不固定折价，健康安全损害不能用其他收益抵消。
+domains:
+- id: food
+  name: 饮食
+  doc_path: docs/行为指南/01-饮食.md
+- id: sleep
+  name: 睡眠
+  doc_path: docs/行为指南/02-睡眠.md
+- id: housing
+  name: 居住
+  doc_path: docs/行为指南/03-居住.md
+- id: clothing
+  name: 穿衣
+  doc_path: docs/行为指南/04-穿衣.md
+- id: shopping
+  name: 消费购物
+  doc_path: docs/行为指南/05-消费购物.md
+- id: ownership
+  name: 物品使用与维护
+  doc_path: docs/行为指南/06-物品使用与维护.md
+- id: transport
+  name: 交通通勤
+  doc_path: docs/行为指南/07-交通通勤.md
+- id: health
+  name: 健康与运动
+  doc_path: docs/行为指南/08-健康与运动.md
+- id: time
+  name: 时间管理
+  doc_path: docs/行为指南/09-时间管理.md
+- id: attention
+  name: 注意力管理
+  doc_path: docs/行为指南/10-注意力管理.md
+- id: work
+  name: 工作
+  doc_path: docs/行为指南/11-工作.md
+- id: learning
+  name: 学习
+  doc_path: docs/行为指南/12-学习.md
+- id: housework
+  name: 家务与收纳
+  doc_path: docs/行为指南/13-家务与收纳.md
+- id: relationships
+  name: 社交关系
+  doc_path: docs/行为指南/14-社交关系.md
+- id: leisure
+  name: 旅行与娱乐
+  doc_path: docs/行为指南/15-旅行与娱乐.md
+- id: safety
+  name: 安全与风险
+  doc_path: docs/行为指南/16-安全与风险.md
+- id: digital
+  name: 数字生活
+  doc_path: docs/行为指南/17-数字生活.md
+- id: lifecycle
+  name: 物品生命周期
+  doc_path: docs/行为指南/18-物品生命周期.md
+guides:
+- id: food-basics
+  name: 基础饮食优先
+  category: food
+  source_type: guoxue_practice
+  summary: 先解决营养，再解决仪式感。
+  status: accepted
+  cost_dimensions:
+  - money
+  - decision
+  - time
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - nutrition
+  - health
+  - safety
+  - convenience
+  - stability
+  core_principles:
+  - P01
+  - P02
+  - P03
+  - P08
+  benefits:
+  - 减少不需要的健康食品溢价、临时选餐和反复补救的开销。
+  - 先保住营养、饮食安全与稳定，再考虑口味和便利。
+  risks:
+  - 准备食物、看标签可能多花一些时间；营养够用也需要必要预算。
+  boundaries:
+  - 不靠少吃、长期单一饮食或来源不明食物压低成本；具体营养和诊疗需要结合可靠专业建议。
+  applicable_when:
+  - 日常饮食不稳定，或希望把餐费放在真正有用的地方时。
+  not_applicable_when:
+  - 有食物过敏、疾病相关饮食要求、孕期或其他特殊需要时，不能直接套普通搭配。
+  recommendation: 检查自己常吃的几顿饭：是否有主食、蛋白质食物、蔬菜水果，以及安全的水；找最容易补上的缺口。 先把基本饮食安排稳定，再决定昂贵食品是否带来明确价值；不把保健品当成正常吃饭的替代。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/01-饮食.md
+  anchor: food-basics
+  cost_changes:
+    reduced:
+    - 减少不需要的健康食品溢价、临时选餐和反复补救的开销。
+    increased:
+    - 准备食物、看标签可能多花一些时间；营养够用也需要必要预算。
+  quality_effects:
+    maintained:
+    - 先保住营养、饮食安全与稳定，再考虑口味和便利。
+    improved: []
+- id: food-daily-and-experience
+  name: 日常饭与体验饭分开
+  category: food
+  source_type: guoxue_practice
+  summary: 日常饭负责可靠，好吃的一顿负责好好享受。
+  status: accepted
+  cost_dimensions:
+  - money
+  - decision
+  - energy
+  - time
+  quality_dimensions:
+  - nutrition
+  - convenience
+  - experience
+  - relationships
+  - stability
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P08
+  benefits:
+  - 减少每天找店、安排复杂菜式和为展示付费的金钱、决策与精力消耗。
+  - 日常饭保住营养、便利和稳定，体验饭照顾真实快乐与重要关系。
+  risks:
+  - 留出体验饭预算，提前安排一次聚餐，也需要钱和时间。
+  boundaries:
+  - 不能为了攒一顿大餐长期吃不够，也不把体验饭变成报复性进食或攀比。
+  applicable_when:
+  - 普通日子选餐费劲，又希望保留美食和聚餐体验时。
+  not_applicable_when:
+  - 饮食限制、工作班次或照护安排复杂时，先保住可获得的合适食物。
+  recommendation: 给普通工作日留几个可靠选项：吃得舒服、方便取得、总价可接受。 吃完看看实际感受。真正喜欢可以再去，只为拍照而疲惫就换方式。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/01-饮食.md
+  anchor: food-daily-and-experience
+  cost_changes:
+    reduced:
+    - 减少每天找店、安排复杂菜式和为展示付费的金钱、决策与精力消耗。
+    increased:
+    - 留出体验饭预算，提前安排一次聚餐，也需要钱和时间。
+  quality_effects:
+    maintained:
+    - 日常饭保住营养、便利和稳定，体验饭照顾真实快乐与重要关系。
+    improved:
+    - 真实饮食体验与重要关系
+- id: food-less-packaging
+  name: 少为包装买单
+  category: food
+  source_type: guoxue_practice
+  summary: 吃进去的价值，比包装上写出来的价值更重要。
+  status: accepted
+  cost_dimensions:
+  - money
+  - attention
+  - time
+  - safety_risk
+  quality_dimensions:
+  - nutrition
+  - safety
+  - convenience
+  - experience
+  core_principles:
+  - P01
+  - P02
+  - P07
+  - P08
+  benefits:
+  - 减少没有实际用处的包装与标签溢价，以及追新品的注意力消耗。
+  - 在营养、卫生、口味和便利能满足需要的前提下，维持真实饮食体验。
+  risks:
+  - 最初比较成分、规格和储存条件会花时间，不能为省一点钱无限研究。
+  boundaries:
+  - 不为省包装钱接受过期、破损、信息不清或储存不当的食品；喜欢设计也可以量力购买。
+  applicable_when:
+  - 同类食品有多种包装和定位，且能看清必要信息时。
+  not_applicable_when:
+  - 需要特殊配方、便携分装，或无法保证散装卫生与追溯时。
+  recommendation: 先确定自己要吃什么、能吃多少，比较同类食品的可食用量和实际价格。 买正常用量，吃过再判断。大包装若吃不完或储存不便，也未必划算。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/01-饮食.md
+  anchor: food-less-packaging
+  cost_changes:
+    reduced:
+    - 减少没有实际用处的包装与标签溢价，以及追新品的注意力消耗。
+    increased:
+    - 最初比较成分、规格和储存条件会花时间，不能为省一点钱无限研究。
+  quality_effects:
+    maintained:
+    - 在营养、卫生、口味和便利能满足需要的前提下，维持真实饮食体验。
+    improved: []
+- id: food-water
+  name: 大水理论：把日常饮水安排顺手
+  category: food
+  source_type: internet_theory
+  summary: 水源安全、方便取得、容器好洗，比喝水挑战重要。
+  status: observation
+  cost_dimensions:
+  - money
+  - time
+  - decision
+  - maintenance
+  - energy
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - health
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P07
+  - P08
+  benefits:
+  - 可能减少日常买饮料的钱、临时购买时间和选择负担。
+  - 维持安全、方便的日常饮水；减少含糖饮料应以自己的实际饮食变化判断。
+  risks:
+  - 清洗容器、携带和确认水源也要花时间；大瓶太重就会增加负担。
+  boundaries:
+  - 不强迫大量饮水，不喝来源不明的水，不用喝水替代饮食和治疗。完整主张见原理论条目，本节是本书的行动分析。
+  applicable_when:
+  - 日常饮水不方便，或想减少临时购买饮料时。
+  not_applicable_when:
+  - 医嘱限制饮水、特殊健康情况或高温高强度活动，不能照抄普通日常安排。
+  recommendation: 选一个经常缺水的场景，先用已有且材质适合、好清洗的容器。 试几天看是否更方便；太重、漏水或难洗，就换小杯或可靠补水点。
+  review_status: source_pending
+  doc_path: docs/行为指南/01-饮食.md
+  anchor: food-water
+  cost_changes:
+    reduced:
+    - 可能减少日常买饮料的钱、临时购买时间和选择负担。
+    increased:
+    - 清洗容器、携带和确认水源也要花时间；大瓶太重就会增加负担。
+  quality_effects:
+    maintained:
+    - 维持安全、方便的日常饮水；减少含糖饮料应以自己的实际饮食变化判断。
+    improved: []
+  theory_id: water
+- id: sleep-adequate
+  name: 长睡眠理论：保障合理睡眠
+  category: sleep
+  source_type: internet_theory
+  summary: 先有合适的睡眠机会，再谈白天能不能撑住。
+  status: observation
+  cost_dimensions:
+  - energy
+  - time
+  - money
+  - health_risk
+  quality_dimensions:
+  - sleep
+  - health
+  - emotional_wellbeing
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P06
+  - P08
+  - P09
+  benefits:
+  - 减少可避免的精力消耗、无效熬夜，以及不必要的补救产品支出。
+  - 优先维护睡眠与健康，观察恢复感和白天功能是否改善，不承诺人人有同样效果。
+  risks:
+  - 睡眠需要真实时间，可能要调整晚间娱乐、工作协调和照护分工。
+  boundaries:
+  - 不是越睡越好，不自行用酒精或药物追时长；明显或持续睡眠问题应寻求专业评估。完整主张见原理论条目。
+  applicable_when:
+  - 可避免的熬夜挤占休息，且能够调整一部分安排时。
+  not_applicable_when:
+  - 轮班、育儿、照护时先争取可行支持；持续失眠、明显嗜睡或睡很久仍异常疲惫，不能靠继续加时解决。
+  recommendation: 观察几天睡觉、起床与白天状态，找出最常挤占睡眠的可改变因素。 看自己白天的感受和生活功能，而不是只追手环分数或卧床时长。
+  review_status: source_pending
+  doc_path: docs/行为指南/02-睡眠.md
+  anchor: sleep-adequate
+  cost_changes:
+    reduced:
+    - 减少可避免的精力消耗、无效熬夜，以及不必要的补救产品支出。
+    increased:
+    - 睡眠需要真实时间，可能要调整晚间娱乐、工作协调和照护分工。
+  quality_effects:
+    maintained:
+    - 优先维护睡眠与健康，观察恢复感和白天功能是否改善，不承诺人人有同样效果。
+    improved:
+    - 恢复感与白天状态（需结合实际观察）
+  theory_id: sleep
+- id: sleep-environment
+  name: 睡眠环境优先
+  category: sleep
+  source_type: guoxue_practice
+  summary: 每天都要用的舒适，值得排到前面。
+  status: accepted
+  cost_dimensions:
+  - money
+  - energy
+  - maintenance
+  - time
+  - safety_risk
+  quality_dimensions:
+  - sleep
+  - comfort
+  - safety
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P07
+  - P08
+  benefits:
+  - 减少反复试买助眠小物、处理环境问题的精力，以及用不到的装饰开销。
+  - 维护舒适、安全与睡眠条件；环境改善不能保证解决所有睡眠问题。
+  risks:
+  - 合适的床具、遮光和环境处理可能增加前期支出与一次性调整时间。
+  boundaries:
+  - 不堵塞通风或逃生路径，不忽略电器和取暖安全；儿童等特殊人群睡眠环境按可靠专业要求安排。
+  applicable_when:
+  - 有明确、可改善的睡眠环境问题，且预算允许时。
+  not_applicable_when:
+  - 根源是疾病、工作安排或居住安全隐患时，买装备不能替代必要处理。
+  recommendation: 先找最明显的干扰：光、噪声、温度或床具不适，只处理最关键的一项。 用一段时间观察是否更舒服。没效果就停下，不继续叠加一堆设备。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/02-睡眠.md
+  anchor: sleep-environment
+  cost_changes:
+    reduced:
+    - 减少反复试买助眠小物、处理环境问题的精力，以及用不到的装饰开销。
+    increased:
+    - 合适的床具、遮光和环境处理可能增加前期支出与一次性调整时间。
+  quality_effects:
+    maintained:
+    - 维护舒适、安全与睡眠条件；环境改善不能保证解决所有睡眠问题。
+    improved:
+    - 实际睡眠舒适度
+- id: housing-rental-total
+  name: 租万物 · 租房：看完整住房成本
+  category: housing
+  source_type: internet_theory
+  summary: 房租省下来了，日子不能全赔在路上。
+  status: conditional
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - space
+  - maintenance
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - sleep
+  - comfort
+  - time_autonomy
+  - stability
+  core_principles:
+  - P01
+  - P02
+  - P03
+  - P05
+  - P06
+  - P08
+  - P10
+  benefits:
+  - 减少用不到的地址、面积和装修溢价，避免后续交通和搬迁的隐性支出。
+  - 保住居住安全、舒适、睡眠与稳定，尽量留出属于自己的时间。
+  risks:
+  - 合适的房源可能租金更高；实地看房、试走通勤和核验合同也要花时间。
+  boundaries:
+  - 月租少500元、每天多两小时通勤只是一个假设例子，不能自动判定划算；危险房源和基本居住质量不达标直接排除。
+  applicable_when:
+  - 选择租房、续租或搬家，需要比较真实居住体验时。
+  not_applicable_when:
+  - 无障碍、照护、夜间通勤、居家工作等有特殊需求时，不能套统一房型与距离。
+  recommendation: 列不能退让的条件，再把月租、交通、水电、服务费、押金占用与搬家放在同一份比较中。 核验出租权限，读清维修、涨租、押金与解约规则，保存合同、交接和付款记录。
+  review_status: source_pending
+  doc_path: docs/行为指南/03-居住.md
+  anchor: housing-rental-total
+  cost_changes:
+    reduced:
+    - 减少用不到的地址、面积和装修溢价，避免后续交通和搬迁的隐性支出。
+    increased:
+    - 合适的房源可能租金更高；实地看房、试走通勤和核验合同也要花时间。
+  quality_effects:
+    maintained:
+    - 保住居住安全、舒适、睡眠与稳定，尽量留出属于自己的时间。
+    improved: []
+  theory_id: housing
+- id: housing-high-use-spaces
+  name: 高频空间优先
+  category: housing
+  source_type: guoxue_practice
+  summary: 先把天天用的地方过舒服，再考虑给谁看。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - maintenance
+  quality_dimensions:
+  - comfort
+  - convenience
+  - safety
+  - sleep
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P07
+  - P08
+  benefits:
+  - 减少低频装饰支出、绕路取物和反复收拾的时间与精力。
+  - 让休息、做饭、清洁和工作更舒适、顺手，保住基本安全。
+  risks:
+  - 关键空间的灯光、设备或布局调整可能增加初期支出与施工协调。
+  boundaries:
+  - 不自行改动有风险的电路、燃气或结构，不挡通道；睡眠环境方法见上一领域，避免重复购买。
+  applicable_when:
+  - 居住空间有明确的高频不便，且可以调整时。
+  not_applicable_when:
+  - 合租、租赁或照护场景，应先确认权限和共同需要，不能只按自己习惯改。
+  recommendation: 回想一周最常用的地方，写下一个反复出现的麻烦，例如桌面太暗或厨房操作不顺。 观察一周有没有更顺手，再处理下一处，不一次把全家改成展示间。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/03-居住.md
+  anchor: housing-high-use-spaces
+  cost_changes:
+    reduced:
+    - 减少低频装饰支出、绕路取物和反复收拾的时间与精力。
+    increased:
+    - 关键空间的灯光、设备或布局调整可能增加初期支出与施工协调。
+  quality_effects:
+    maintained:
+    - 让休息、做饭、清洁和工作更舒适、顺手，保住基本安全。
+    improved:
+    - 日常居住便利与舒适
+- id: housing-useful-space
+  name: 空间利用率
+  category: housing
+  source_type: guoxue_practice
+  summary: 面积是数字，好不好住是每天的事。
+  status: accepted
+  cost_dimensions:
+  - money
+  - space
+  - maintenance
+  - time
+  - safety_risk
+  quality_dimensions:
+  - comfort
+  - convenience
+  - safety
+  - stability
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P05
+  - P08
+  benefits:
+  - 减少闲置空间的租金、无用家具和清洁维护负担。
+  - 维护舒适、便利、安全和稳定的生活安排，不以拥挤证明节约。
+  risks:
+  - 重新规划布局、处理闲置和合适的收纳需要时间，也可能有必要支出。
+  boundaries:
+  - 不接受违法隔断、消防隐患或基本活动受限；折叠和多功能家具也要确认牢固、安全、好操作。
+  applicable_when:
+  - 需要改善现有布局，或比较不同房型时。
+  not_applicable_when:
+  - 有儿童、无障碍、居家工作或照护需要时，必须保留足够活动与私密空间。
+  recommendation: 按睡觉、吃饭、做饭、工作、洗漱与储物画出实际活动路线，找堵点和长期闲置区。 比较房源时看可用布局、采光、通风和共同生活需要，不只看面积单价。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/03-居住.md
+  anchor: housing-useful-space
+  cost_changes:
+    reduced:
+    - 减少闲置空间的租金、无用家具和清洁维护负担。
+    increased:
+    - 重新规划布局、处理闲置和合适的收纳需要时间，也可能有必要支出。
+  quality_effects:
+    maintained:
+    - 维护舒适、便利、安全和稳定的生活安排，不以拥挤证明节约。
+    improved: []
+- id: clothing-fewer-useful
+  name: 少而好穿
+  category: clothing
+  source_type: guoxue_practice
+  summary: 衣服少一点，常穿的合适一点。
+  status: accepted
+  cost_dimensions:
+  - money
+  - space
+  - maintenance
+  - decision
+  quality_dimensions:
+  - comfort
+  - convenience
+  - safety
+  - experience
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P07
+  - P08
+  - P10
+  benefits:
+  - 减少闲置购买、储存、特殊护理和每天选衣服的负担。
+  - 保住舒适、必要防护、方便穿搭和自己的真实审美体验。
+  risks:
+  - 更耐穿、合身的衣服可能单价更高，也需要先试穿。
+  boundaries:
+  - 不能为少买而缺乏保暖、防晒或工作防护；喜欢时尚和造型也是体验，可以在预算内安排。
+  applicable_when:
+  - 日常穿搭费劲或长期存在大量闲置时。
+  not_applicable_when:
+  - 制服、专业防护、特殊体型和身体需求，应先满足对应条件。
+  recommendation: 看看最近常穿的衣服，记录合身、舒服、好清洗的特点，先找真实缺口。 暂缓重复购买；不合适的按状态修补、转让或处理，不急着再添一套。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/04-穿衣.md
+  anchor: clothing-fewer-useful
+  cost_changes:
+    reduced:
+    - 减少闲置购买、储存、特殊护理和每天选衣服的负担。
+    increased:
+    - 更耐穿、合身的衣服可能单价更高，也需要先试穿。
+  quality_effects:
+    maintained:
+    - 保住舒适、必要防护、方便穿搭和自己的真实审美体验。
+    improved: []
+- id: clothing-cost-per-wear
+  name: 单位穿着成本
+  category: clothing
+  source_type: guoxue_practice
+  summary: 常穿又舒服，才有机会把买价用回来。
+  status: accepted
+  cost_dimensions:
+  - money
+  - decision
+  - time
+  quality_dimensions:
+  - comfort
+  - experience
+  - sustainability
+  core_principles:
+  - P03
+  - P05
+  - P06
+  - P07
+  - P08
+  benefits:
+  - 减少低使用率购买和虚假的折扣诱惑。
+  - 在舒适、合身与场景合用的前提下，观察长期使用价值。
+  risks:
+  - 可能需要支付更高前期价格，估计和复盘也花一点时间。
+  boundaries:
+  - 预计次数不是承诺，单次成本也不能证明贵就好；预算不足时不为了“划算”负债。
+  applicable_when:
+  - 比较用途相近、舒适与功能都能满足需求的衣物时。
+  not_applicable_when:
+  - 礼仪场合、专业防护和少见但必要的衣物，不能只按次数判定不值得。
+  recommendation: 购买前按现有习惯估计多久能穿一次，不按“以后我会天天穿”计算。 穿过一段时间再回看实际次数，修正下一次选择；不为了摊薄成本硬穿不合适的衣服。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/04-穿衣.md
+  anchor: clothing-cost-per-wear
+  cost_changes:
+    reduced:
+    - 减少低使用率购买和虚假的折扣诱惑。
+    increased:
+    - 可能需要支付更高前期价格，估计和复盘也花一点时间。
+  quality_effects:
+    maintained:
+    - 在舒适、合身与场景合用的前提下，观察长期使用价值。
+    improved: []
+- id: clothing-standard-basics
+  name: 基础用品标准化
+  category: clothing
+  source_type: guoxue_practice
+  summary: 袜子已经合适，就不必每次重新开选购会议。
+  status: accepted
+  cost_dimensions:
+  - time
+  - attention
+  - decision
+  - money
+  - space
+  quality_dimensions:
+  - comfort
+  - convenience
+  - stability
+  core_principles:
+  - P03
+  - P04
+  - P07
+  - P08
+  benefits:
+  - 减少重复比较、搭配与决策的注意力和时间成本。
+  - 维持合身、舒适、好清洗与补货便利，也保留变化空间。
+  risks:
+  - 首次找到合适款需要试用；稳定复购仍有正常购买支出。
+  boundaries:
+  - 默认不等于永久，复购不等于囤货；不因优惠大量压库存。
+  applicable_when:
+  - 需求稳定、已经找到实际合适的基础衣物时。
+  not_applicable_when:
+  - 身体状态或工作条件变化，原款不适合时，不要为统一继续忍受。
+  recommendation: 先从一种常用基础用品开始，试穿后记录品牌、型号、尺寸和实际感受。 按使用和洗衣频率补货；身体、气候或需求变了，就重新选择。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/04-穿衣.md
+  anchor: clothing-standard-basics
+  cost_changes:
+    reduced:
+    - 减少重复比较、搭配与决策的注意力和时间成本。
+    increased:
+    - 首次找到合适款需要试用；稳定复购仍有正常购买支出。
+  quality_effects:
+    maintained:
+    - 维持合身、舒适、好清洗与补货便利，也保留变化空间。
+    improved: []
+- id: shopping-secondhand
+  name: 二手 / 闲鱼：买使用价值
+  category: shopping
+  source_type: internet_theory
+  summary: 成色、保障和总成本，比新旧标签更值得看。
+  status: conditional
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - maintenance
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - experience
+  - sustainability
+  core_principles:
+  - P01
+  - P02
+  - P03
+  - P06
+  - P07
+  - P08
+  - P10
+  benefits:
+  - 可能减少新品溢价和购置支出。
+  - 在功能、卫生和安全可靠的前提下，维持使用体验与便利。
+  risks:
+  - 搜索、验货、运输、清洁和维修可能增加时间、精力与风险。
+  boundaries:
+  - 不为低价购买来源不明、违法或直接影响生命安全且无法验证的物品，不绕过付款保障；详细检查见原实践篇。
+  applicable_when:
+  - 真实需要某件物品，有能力核验状态与接受合理风险时。
+  not_applicable_when:
+  - 无法判断安全历史、卫生或来源，或无时间验货时，应比较更有保障的渠道。
+  recommendation: 先写用途、尺寸和必需功能，再对照新品价格，计入运费、清洁和可预见维修。 收到后先检验再确认；电子设备注意账户、隐私与数据安全。
+  review_status: source_pending
+  doc_path: docs/行为指南/05-消费购物.md
+  anchor: shopping-secondhand
+  cost_changes:
+    reduced:
+    - 可能减少新品溢价和购置支出。
+    increased:
+    - 搜索、验货、运输、清洁和维修可能增加时间、精力与风险。
+  quality_effects:
+    maintained:
+    - 在功能、卫生和安全可靠的前提下，维持使用体验与便利。
+    improved: []
+  theory_id: secondhand
+- id: shopping-renting
+  name: 租万物：先决定怎么使用
+  category: shopping
+  source_type: internet_theory
+  summary: 需要使用价值，不一定需要所有权。
+  status: conditional
+  cost_dimensions:
+  - money
+  - space
+  - maintenance
+  - time
+  - energy
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P05
+  - P06
+  - P07
+  - P08
+  benefits:
+  - 可能降低前期支出、收纳、闲置与自行维护的负担。
+  - 保住可靠性、便利与必要稳定，让短期和长期需求都能按实际条件获得合适的使用方式。
+  risks:
+  - 租金、押金占用、取还、续租和合同责任可能增加钱、时间与操心。
+  boundaries:
+  - 安全、卫生和权限无法确认就停止；免押不代表没有信用或赔偿责任，专业高风险设备不能跳过资质。
+  applicable_when:
+  - 租房、家具、设备、工具和活动用品等短期或长期需求；总成本、稳定性和合同责任合适时。
+  not_applicable_when:
+  - 取还或供给安排无法满足实际使用、长期总费用明显不合适，或费用与责任不清时；高频本身不是排除租用的理由。
+  recommendation: 写用途、期限、需要随时可用的程度，先看看已有物品能不能解决。 确认物品与合同可靠，留好交接记录；使用期限延长时重算。
+  review_status: source_pending
+  doc_path: docs/行为指南/05-消费购物.md
+  anchor: shopping-renting
+  cost_changes:
+    reduced:
+    - 可能降低前期支出、收纳、闲置与自行维护的负担。
+    increased:
+    - 租金、押金占用、取还、续租和合同责任可能增加钱、时间与操心。
+  quality_effects:
+    maintained:
+    - 保住可靠性、便利与必要稳定，让短期和长期需求都能按实际条件获得合适的使用方式。
+    improved: []
+  theory_id: renting
+- id: shopping-try-before-owning
+  name: 先租 / 先试后买
+  category: shopping
+  source_type: guoxue_practice
+  summary: 不为“幻想中的自己”消费。
+  status: accepted
+  cost_dimensions:
+  - money
+  - space
+  - maintenance
+  - time
+  - energy
+  quality_dimensions:
+  - experience
+  - emotional_wellbeing
+  - sustainability
+  core_principles:
+  - P03
+  - P05
+  - P06
+  - P07
+  - P08
+  benefits:
+  - 减少误购、闲置空间和买后维护损失。
+  - 保留探索兴趣的真实体验，同时减少失败购买带来的压力。
+  risks:
+  - 试用或租赁要花费用、取还时间，可能受可用性限制。
+  boundaries:
+  - 试用需遵守商家和出租方规则，不滥用退货；租来的设备同样要安全、来源可靠。
+  applicable_when:
+  - 价格较高、兴趣未稳定或很难估计使用频率的物品时。
+  not_applicable_when:
+  - 医疗、卫生、专业防护等不适合共享试用的品类，或紧急必需品，不套这一步。
+  recommendation: 找一次真实使用机会，借用、合规试用或短租，不为证明兴趣先买一套。 若需求持续，再比较租与买的总成本；试过发现不喜欢，也算得到有用答案。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/05-消费购物.md
+  anchor: shopping-try-before-owning
+  cost_changes:
+    reduced:
+    - 减少误购、闲置空间和买后维护损失。
+    increased:
+    - 试用或租赁要花费用、取还时间，可能受可用性限制。
+  quality_effects:
+    maintained:
+    - 保留探索兴趣的真实体验，同时减少失败购买带来的压力。
+    improved: []
+- id: shopping-cooling-off
+  name: 72小时冷静原则
+  category: shopping
+  source_type: guoxue_practice
+  summary: 不着急用的东西，先别着急付款。
+  status: accepted
+  cost_dimensions:
+  - money
+  - decision
+  - emotion
+  - time
+  quality_dimensions:
+  - emotional_wellbeing
+  - stability
+  - experience
+  core_principles:
+  - P03
+  - P05
+  - P08
+  - P10
+  benefits:
+  - 减少冲动消费、重复购买和后悔带来的情绪负担。
+  - 维持财务稳定与更从容的选择，把快乐留给真正想要的东西。
+  risks:
+  - 需要等待，可能失去某个折扣；整理愿望清单也花少量时间。
+  boundaries:
+  - 72小时只是方便记忆的参考，不是科学阈值或所有人的硬规定；不要把延迟变成长期不敢决定。
+  applicable_when:
+  - 容易冲动购买、且等待不会造成实际损失时。
+  not_applicable_when:
+  - 必要医疗、安全防护、急需工作工具等，不因冷静期耽误。
+  recommendation: 非刚需、非紧急时先放愿望清单，写一句用途和预算，关闭催单提醒。 若确实需要且能承担总成本，就买；只因优惠诱人，就让清单继续空着。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/05-消费购物.md
+  anchor: shopping-cooling-off
+  cost_changes:
+    reduced:
+    - 减少冲动消费、重复购买和后悔带来的情绪负担。
+    increased:
+    - 需要等待，可能失去某个折扣；整理愿望清单也花少量时间。
+  quality_effects:
+    maintained:
+    - 维持财务稳定与更从容的选择，把快乐留给真正想要的东西。
+    improved: []
+- id: shopping-substitute
+  name: 替代品原则
+  category: shopping
+  source_type: guoxue_practice
+  summary: 家里已有的东西，可能已经能把这件事做好。
+  status: accepted
+  cost_dimensions:
+  - money
+  - space
+  - maintenance
+  - decision
+  - time
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - experience
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P07
+  - P08
+  benefits:
+  - 减少重复购置、收纳、维护与选择负担。
+  - 在核心功能、安全与实际便利满足的前提下，保持任务完成体验。
+  risks:
+  - 已有物品可能需要一点调整，也可能比专用品多花操作时间。
+  boundaries:
+  - “完成80%的功能”是提问的参考表达，不能跳过关键安全与功能；不做危险改装。
+  applicable_when:
+  - 普通、低风险生活任务，已有工具功能相近时。
+  not_applicable_when:
+  - 专业作业、卫生、防护和安全要求明确时，不能拿不合格替代品凑合。
+  recommendation: 把任务写成具体要求，再检查已有东西是否能完成必要部分。 购买理由写清“现有东西哪里不够”，再决定升级。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/05-消费购物.md
+  anchor: shopping-substitute
+  cost_changes:
+    reduced:
+    - 减少重复购置、收纳、维护与选择负担。
+    increased:
+    - 已有物品可能需要一点调整，也可能比专用品多花操作时间。
+  quality_effects:
+    maintained:
+    - 在核心功能、安全与实际便利满足的前提下，保持任务完成体验。
+    improved: []
+- id: shopping-repair-before-replace
+  name: 修优于换
+  category: shopping
+  source_type: guoxue_practice
+  summary: 能合理修好的，不必只因为旧就退场。
+  status: accepted
+  cost_dimensions:
+  - money
+  - maintenance
+  - time
+  - energy
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P04
+  - P05
+  - P06
+  - P07
+  benefits:
+  - 合理维修可能减少重购、搬运和处理旧物的成本。
+  - 保住可靠、顺手的使用体验和必要安全，维持长期可用。
+  risks:
+  - 检测、维修费、等待和再次故障风险也要计入。
+  boundaries:
+  - 电路、燃气、承重等高风险维修交给合适专业人员；不为节省跳过必要安全检查。
+  applicable_when:
+  - 故障明确、维修可靠、费用和等待可接受的物品时。
+  not_applicable_when:
+  - 影响生命安全、被召回或存在无法消除隐患的产品，不以维修坚持继续使用。
+  recommendation: 确认故障与保修，咨询有能力的维修渠道，问清费用、预期寿命与保障。 修好后检验；反复故障或安全不能保证时，及时换方案。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/05-消费购物.md
+  anchor: shopping-repair-before-replace
+  cost_changes:
+    reduced:
+    - 合理维修可能减少重购、搬运和处理旧物的成本。
+    increased:
+    - 检测、维修费、等待和再次故障风险也要计入。
+  quality_effects:
+    maintained:
+    - 保住可靠、顺手的使用体验和必要安全，维持长期可用。
+    improved: []
+- id: shopping-mature-products
+  name: 成熟产品优先
+  category: shopping
+  source_type: guoxue_practice
+  summary: 日常工具先把活干稳，再谈新鲜感。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - maintenance
+  - decision
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P04
+  - P06
+  - P07
+  - P08
+  benefits:
+  - 减少试错、换配件、学习新操作和难维修的后续负担。
+  - 优先稳定、方便、安全和长期可维护的使用体验。
+  risks:
+  - 可靠与配件完善的产品可能售价更高，比较服务也需要时间。
+  boundaries:
+  - 成熟不等于越旧越好，也不保证每件产品可靠；具体型号仍需核验。
+  applicable_when:
+  - 日常高频工具，需求明确，可靠性比尝鲜更重要时。
+  not_applicable_when:
+  - 旧方案不满足无障碍、效率、安全或支持需求时，不能为了成熟拒绝合理更新。
+  recommendation: 列核心功能和使用环境，先确认可靠性、配件、保修与维修渠道。 电子设备确认安全更新与支持期限，不买已经不适合安全使用的旧型号。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/05-消费购物.md
+  anchor: shopping-mature-products
+  cost_changes:
+    reduced:
+    - 减少试错、换配件、学习新操作和难维修的后续负担。
+    increased:
+    - 可靠与配件完善的产品可能售价更高，比较服务也需要时间。
+  quality_effects:
+    maintained:
+    - 优先稳定、方便、安全和长期可维护的使用体验。
+    improved: []
+- id: ownership-total-cost
+  name: 总拥有成本
+  category: ownership
+  source_type: guoxue_practice
+  summary: 别只问多少钱买到，也问之后还要付什么。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - space
+  - maintenance
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P04
+  - P05
+  - P06
+  - P07
+  - P08
+  benefits:
+  - 减少只看售价导致的误购，以及可预见的后续开销与维护负担。
+  - 保住长期可靠、方便、安全和可持续的使用，不让一个物品拖垮日常安排。
+  risks:
+  - 购买前需要查少量关键信息，更可靠的方案可能前期价格更高。
+  boundaries:
+  - 转售损失已包含在“购置价－转售收入”中，不能再加一遍；时间等资源不设统一换算价，健康安全底线也不能靠便宜抵消。
+  applicable_when:
+  - 家电、设备、家具、交通工具等后续成本显著的物品时。
+  not_applicable_when:
+  - 低额简单用品不必写复杂表，紧急必要需求也不能为算账耽误处理。
+  recommendation: 按预计使用期限算金钱账：购置价＋耗材、维修、能源等支出－可合理预期的转售收入；不确定收入按保守情景看。 并排比较能满足需求的方案，检查预算与现金流；选择后再用实际账修正预估。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/06-物品使用与维护.md
+  anchor: ownership-total-cost
+  cost_changes:
+    reduced:
+    - 减少只看售价导致的误购，以及可预见的后续开销与维护负担。
+    increased:
+    - 购买前需要查少量关键信息，更可靠的方案可能前期价格更高。
+  quality_effects:
+    maintained:
+    - 保住长期可靠、方便、安全和可持续的使用，不让一个物品拖垮日常安排。
+    improved: []
+- id: ownership-low-maintenance
+  name: 低维护优先
+  category: ownership
+  source_type: guoxue_practice
+  summary: 这玩意以后好不好伺候？购买前就该问。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - maintenance
+  quality_dimensions:
+  - convenience
+  - comfort
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P06
+  - P08
+  benefits:
+  - 减少不必要的清洁、维护、耗材和操心成本。
+  - 维持实际体验，让生活更便利、省心和容易长期维持。
+  risks:
+  - 耐用、好清洗、好维修的方案可能买价更高，也可能少一些花样功能。
+  boundaries:
+  - 低维护不是不维护，清洁、防护和安全检查不能省；耐用和寿命也要看具体产品，不能凭标签保证。
+  applicable_when:
+  - 核心使用效果接近，而后续维护差别明显时。
+  not_applicable_when:
+  - 某项复杂功能确实服务医疗、无障碍、工作或重要兴趣时，不能只求简单。
+  recommendation: 看使用说明：要多久清洁、更换什么、耗材买不买得到、维修如何处理。 保留必要保养安排，定期看是否真的省事；没有用的附加功能就不再追。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/06-物品使用与维护.md
+  anchor: ownership-low-maintenance
+  cost_changes:
+    reduced:
+    - 减少不必要的清洁、维护、耗材和操心成本。
+    increased:
+    - 耐用、好清洗、好维修的方案可能买价更高，也可能少一些花样功能。
+  quality_effects:
+    maintained:
+    - 维持实际体验，让生活更便利、省心和容易长期维持。
+    improved:
+    - 省心与长期维护便利
+- id: ownership-high-frequency
+  name: 高频用品优先投入
+  category: ownership
+  source_type: guoxue_practice
+  summary: 天天用的舒服，值得认真对待。
+  status: accepted
+  cost_dimensions:
+  - money
+  - energy
+  - maintenance
+  - opportunity
+  quality_dimensions:
+  - comfort
+  - convenience
+  - safety
+  - experience
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P06
+  - P07
+  - P08
+  benefits:
+  - 减少低使用价值支出、反复更换和日常不便消耗的精力。
+  - 让具体使用场景更舒适、顺手或可靠；投入要有实际改善。
+  risks:
+  - 真正合适的床、鞋、眼镜、椅子、手机或通勤工具可能增加一次性投入。
+  boundaries:
+  - 低频安全用品也可能必须投入，不能因用得少淘汰；不为买更好的用品透支必要生活和财务缓冲。
+  applicable_when:
+  - 高频用品有明确、持续的问题，改善可验证且负担得起时。
+  not_applicable_when:
+  - 现有物品已够用，或升级只增加展示与营销卖点时，不必投入。
+  recommendation: 找一个每天使用、确实有问题的物品，写清痛点，例如鞋不合脚或椅子不适合工作。 在预算内选择，使用后检查是否改善；没有真实变化就不继续加价追配置。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/06-物品使用与维护.md
+  anchor: ownership-high-frequency
+  cost_changes:
+    reduced:
+    - 减少低使用价值支出、反复更换和日常不便消耗的精力。
+    increased:
+    - 真正合适的床、鞋、眼镜、椅子、手机或通勤工具可能增加一次性投入。
+  quality_effects:
+    maintained:
+    - 让具体使用场景更舒适、顺手或可靠；投入要有实际改善。
+    improved:
+    - 具体高频场景的舒适与便利
+- id: commute-time-cost
+  name: 通勤时间也是成本
+  category: transport
+  source_type: guoxue_practice
+  summary: 房租和车费写在账单上，通勤占掉的时间也要写进选择里。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - opportunity
+  - safety_risk
+  quality_dimensions:
+  - sleep
+  - safety
+  - convenience
+  - time_autonomy
+  - sustainability
+  core_principles:
+  - P01
+  - P05
+  - P06
+  - P08
+  benefits:
+  - 争取合理睡眠、时间自主与日常便利；交通安全和基本居住质量要先守住。
+  risks:
+  - 更高租金与搬家费用超出预算。
+  - 忽略房屋质量或路线安全，只追求距离短。
+  boundaries:
+  - “月租少 500 元，却每天多通勤两小时”是判断例子，没有统一结论。
+  - 不选明显不安全的房屋或交通路线，不把时间强行折成每个人都一样的金额。
+  applicable_when:
+  - 正在选住处、换工作地点或调整通勤路线，而且有几个真实可选的方案。
+  not_applicable_when:
+  - 预算很紧、需要照护家人或只有少数房源时，不能套“离公司近就一定好”；没有选择余地也不是不会过。
+  recommendation: 用平常上下班的时段试走路线，记下门到门时间、换乘和容易延误的环节。 把可行房源的租金、交通费、往返时间和居住体验放在一起比；租房的完整检查见[租万物中的租房](../04-过日子的具体方法/租万物/01-租房.md)。
+    再看自己的预算和责任，选能长期承受的方案；暂时搬不了，也可以先减少一项路上折腾。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/07-交通通勤.md
+  anchor: commute-time-cost
+  cost_changes:
+    reduced:
+    - 时间：减少可避免的长距离往返。
+    - 精力与机会：少一点赶路疲劳，把可支配时间留给更重要的事。
+    increased:
+    - 金钱：更近的房源、合适的交通服务可能更贵；搬家也有一次性费用。
+  quality_effects:
+    maintained:
+    - safety
+    improved:
+    - sleep
+    - convenience
+    - time_autonomy
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: effective-transport
+  name: 最短有效交通
+  category: transport
+  source_type: guoxue_practice
+  summary: 选真正顺手、安全、总负担小的走法，不选一个看起来有身份的走法。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - maintenance
+  - space
+  - decision
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - comfort
+  - convenience
+  - time_autonomy
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P08
+  - P10
+  benefits:
+  - 守住交通安全，改善便利、舒适和时间自主。
+  risks:
+  - 只看最快路线，忽略天气、身体条件和交通安全。
+  - 购车或购置装备后产生未计入的维护与停放负担。
+  boundaries:
+  - 遵守交通规则，必要头盔和防护不省；不以赶时间为理由冒险。
+  - “最短有效”看完整行程与个人条件，不只看地图公里数或最快纪录。
+  applicable_when:
+  - 有不同出行方式可比较，或某条常用路线长期让你费劲。
+  not_applicable_when:
+  - 行动不便、带孩子、夜间出行、恶劣天气和携带重物时，不能照搬别人的低价路线。
+  recommendation: 列出两三种可行方式，比较门到门时间、费用、换乘、天气和自己能承受的体力。 用常见场景试一次：工作日、买菜、雨天各需要什么；不必一种交通方式包办所有事情。 留下常用路线和一个可靠备选，交通条件变了再更新。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/07-交通通勤.md
+  anchor: effective-transport
+  cost_changes:
+    reduced:
+    - 时间、精力与决策：减少多余换乘、找车位和反复纠结。
+    - 金钱：避开对当前需求无效的出行开销。
+    increased:
+    - 金钱：某些时段打车、购买合适装备或支付停车费，可能是实际需要。
+    - 维护与空间：拥有交通工具之后要承担保养、停放和退出成本。
+  quality_effects:
+    maintained:
+    - safety
+    improved:
+    - comfort
+    - convenience
+    - time_autonomy
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: local-life-circle
+  name: 15 分钟生活圈
+  category: transport
+  source_type: guoxue_practice
+  summary: 把经常要做的事安排得近一点、顺一点，少为每件小事专门出一趟门。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - decision
+  quality_dimensions:
+  - convenience
+  - time_autonomy
+  - stability
+  - sustainability
+  core_principles:
+  - P03
+  - P04
+  - P05
+  - P07
+  - P08
+  benefits:
+  - 提升便利和时间自主，让生活安排更容易长期维持。
+  risks:
+  - 为便利地段支付过高溢价。
+  - 附近服务不可靠，或为了距离放弃必要专业服务。
+  boundaries:
+  - 15 分钟是方便理解的目标，不是所有人的硬性标准，也不保证某个地段更划算。
+  - 附近有店不等于质量可靠；安全、价格、服务与实际可达性仍要核查。
+  applicable_when:
+  - 规划住处周边生活、选择住房，或发现日常跑腿经常重复。
+  not_applicable_when:
+  - 偏远地区、轮班、特殊照护和专业服务需求，不一定能在短距离内解决。
+  recommendation: 标出自己每周真的会用的地方：买菜、基础餐食、运动、取件和必要服务。 找能顺路完成的安排；选住房时，把常用配套和可靠性一起看，而不是只看商圈名称。 保留重要服务的可达性，不为凑一个小圈子放弃合适医疗、工作或重要关系。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/07-交通通勤.md
+  anchor: local-life-circle
+  cost_changes:
+    reduced:
+    - 时间与精力：减少重复出门和来回跑。
+    - 决策：建立熟悉、可靠的日常服务选项。
+    increased:
+    - 金钱：更便利的地段或服务可能有溢价，需要与实际使用频率一起比较。
+    - 时间：最初了解附近服务要花一点功夫。
+  quality_effects:
+    maintained:
+    - stability
+    improved:
+    - convenience
+    - time_autonomy
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: health-first
+  name: 健康不能拿来省
+  category: health
+  source_type: guoxue_practice
+  summary: 预算可以调整，基本营养、合理睡眠、必要医疗和安全不能当作省钱的筹码。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - health
+  - sleep
+  - nutrition
+  - safety
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P06
+  - P08
+  - P09
+  benefits:
+  - 优先守住健康、睡眠、营养、安全和长期稳定；这些不是要用优惠抵消的项目。
+  risks:
+  - 把一般生活习惯当作诊疗替代。
+  - 在必要支出与可用资源紧张时，无法单靠个人调整解决问题。
+  boundaries:
+  - 这不是诊断、用药或治疗指南；明显健康问题不能靠网络口号处理。
+  - 不拿“将来肯定省医疗费”保证任何产品或行为的回报，也不把受限制的人归咎为不自律。
+  applicable_when:
+  - 做生活预算、挑商品或决定是否继续透支时，都应先检查这一条。
+  not_applicable_when:
+  - 已有诊疗安排、特殊营养需求或特殊身体情况，不按普通生活建议替换专业方案。
+  recommendation: 先检查最近有没有长期吃不够、睡不够，或影响生活的明显不适。 把基本食物、休息和必要医疗排在低价值消费前；需要时寻求适合自己情况的专业帮助。 资源紧张时先争取可用的支持与低门槛服务，逐步改善，不拿困难给自己打道德分。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/08-健康与运动.md
+  anchor: health-first
+  cost_changes:
+    reduced:
+    - 健康与安全风险：避免因长期透支、危险用品或拖延必要处理而增加风险。
+    - 精力：减少反复硬撑和围绕身体问题的折腾。
+    increased:
+    - 金钱与时间：合理饮食、休息、必要医疗和合格用品本来就需要投入。
+  quality_effects:
+    maintained:
+    - health
+    - sleep
+    - nutrition
+    - safety
+    - stability
+    improved:
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: preventive-routine
+  name: 预防优于补救
+  category: health
+  source_type: guoxue_practice
+  summary: 把可靠、适合自己的日常照顾做起来，少等出了问题才临时猛补。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - decision
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - health
+  - safety
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P06
+  - P08
+  benefits:
+  - 维护健康、安全与生活稳定，让照顾身体更容易持续。
+  risks:
+  - 过度检查、无依据补剂或不适合自己的活动增加成本与风险。
+  - 以预防为理由延误已有问题的必要处理。
+  boundaries:
+  - 预防不能保证不生病，也不意味着检查越多、补剂越贵越好。
+  - 不自行确定医疗检查、治疗或药物方案；可避免的风险与无法控制的风险要分开。
+  applicable_when:
+  - 想改善日常习惯，且方法有可靠依据、适合自己的健康状况。
+  not_applicable_when:
+  - 伤病、恢复期、特殊健康需求，以及不明确的检查或补剂推荐，不能直接套普通人的安排。
+  recommendation: 从一项基础习惯开始：规律休息、适合自己的活动、可靠口腔护理或日常安全检查。 把所需物品放在顺手位置，安排可维持的时间；口腔和其他健康管理按合适的专业建议执行。 已有问题就及时处理，再调整日常安排，不用“我正在预防”替代必要诊疗。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/08-健康与运动.md
+  anchor: preventive-routine
+  cost_changes:
+    reduced:
+    - 健康与安全风险：减少一些可避免的风险，效果取决于个人情况与做法。
+    - 决策与精力：用简单日常安排，减少临时慌乱地找方案。
+    increased:
+    - 时间与金钱：日常护理、合适活动和必要的专业管理需要稳定投入。
+  quality_effects:
+    maintained:
+    - health
+    - safety
+    - stability
+    improved:
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: lean-muscle-practice
+  name: 薄肌理论：练身体，不交身材作业
+  category: health
+  source_type: internet_theory
+  summary: 从身体训练获得反馈，投入、健康和长期维护都要适合自己。
+  status: conditional
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - maintenance
+  - emotion
+  - health_risk
+  quality_dimensions:
+  - health
+  - nutrition
+  - comfort
+  - emotional_wellbeing
+  - experience
+  - sustainability
+  core_principles:
+  - P01
+  - P04
+  - P07
+  - P08
+  - P09
+  - P10
+  benefits:
+  - 以健康、实际活动能力、个人舒适与运动体验为目标，守住营养和必要恢复。
+  risks:
+  - 极端减脂、过度训练与带伤训练危害健康。
+  - 单一体型审美加重饮食与身材焦虑。
+  boundaries:
+  - 不设统一体脂、体重、围度或训练强度，不鼓励饥饿、脱水、药物塑形和带伤硬练。
+  - 有条件收录的是列明边界下的实践讨论；不把本书的解释当成作者的完整原定义。
+  applicable_when:
+  - 对原主张有兴趣，也愿意把体型目标放回个人健康、训练条件和实际生活中评估。
+  not_applicable_when:
+  - 伤病、特殊健康状况、竞技或康复需求，以及越来越强的饮食与身材焦虑，不套泛用安排。
+  recommendation: 先写一个生活目标，比如能规律运动、搬拿更轻松或享受一种运动，不先复制图片里的身材。 按身体情况、预算和空闲时间选适合的安排；需要技术指导时，找可靠指导，而不是靠受伤摸索。
+    观察是否能持续、有无异常不适、是否挤掉饮食和休息；完整讨论见[薄肌理论](../04-过日子的具体方法/03-薄肌理论.md)。
+  review_status: source_pending
+  doc_path: docs/行为指南/08-健康与运动.md
+  anchor: lean-muscle-practice
+  cost_changes:
+    reduced:
+    - 注意力与情绪：减少为了单一身材标准反复比较。
+    - 维护与精力：在满足目标的前提下，减少不必要的复杂训练安排。
+    increased:
+    - 时间与金钱：适合自己的训练、可靠指导、场地和装备可能需要投入。
+  quality_effects:
+    maintained:
+    - health
+    - nutrition
+    - comfort
+    improved:
+    - emotional_wellbeing
+    - experience
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+  theory_id: lean-muscle
+- id: sustainable-exercise
+  name: 可持续运动
+  category: health
+  source_type: guoxue_practice
+  summary: 选身体适应、自己愿意做、日程放得下的运动，先让它留在生活里。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - maintenance
+  - decision
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - health
+  - safety
+  - emotional_wellbeing
+  - experience
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P07
+  - P08
+  - P09
+  benefits:
+  - 争取健康、实际体能、真实体验与长期可持续性，必要时也能让情绪得到调节。
+  risks:
+  - 训练强度、技术或场地不合适导致受伤。
+  - 会员与装备支出过大，或训练挤掉饮食和休息。
+  boundaries:
+  - 兴趣不能抵消场地与技术风险；持续疼痛或异常不适时应停止加码并寻求合适评估。
+  - 不提供统一训练处方，不承诺身材、减重速度或医疗效果；搏击在这里是一种运动选项。
+  applicable_when:
+  - 想把运动变成日常的一部分，或现有计划太复杂、太贵、太难维持。
+  not_applicable_when:
+  - 伤病、特殊健康情况、竞技训练与康复要求，需要针对性指导。别人的训练量不等于你的起点。
+  recommendation: 从有兴趣且条件允许的选项里挑一项，比如步行、跑步、力量训练、游泳或搏击。 安排可承受的频率和强度，留出恢复；有技术、场地或防护要求的项目，把它们算入预算。 过一段时间看实际参与、感受与身体反应，再调整；没坚持住先改安排，别先罚自己买一套新的。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/08-健康与运动.md
+  anchor: sustainable-exercise
+  cost_changes:
+    reduced:
+    - 金钱、决策与维护：减少用不上的会员、装备和反复换计划。
+    - 精力：避免把运动安排成长期承受不了的额外负担。
+    increased:
+    - 时间与金钱：合理运动仍需要时间，场地、必要防护或指导也可能值得投入。
+  quality_effects:
+    maintained:
+    - health
+    - safety
+    improved:
+    - emotional_wellbeing
+    - experience
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: time-value
+  name: 时间成本原则
+  category: time
+  source_type: guoxue_practice
+  summary: 省钱前顺手算一下：为了省这笔钱，我还要交多少时间和精力？
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - opportunity
+  quality_dimensions:
+  - convenience
+  - time_autonomy
+  - emotional_wellbeing
+  core_principles:
+  - P05
+  - P07
+  - P08
+  - P09
+  benefits:
+  - 增加时间自主与日常便利，也减少一直盯优惠的情绪负担。
+  risks:
+  - 为省时多付的费用超出预算。
+  - 用统一时薪替个人取舍下结论，或省掉必要核查。
+  boundaries:
+  - 不按工资给所有闲暇统一定价，也不把休息视为没产出。
+  - 不要为了赶时间省掉必要验货、安全检查或专业判断。
+  applicable_when:
+  - 面对比价、领券、跑腿、自己做还是买服务等日常选择。
+  not_applicable_when:
+  - 时间较宽裕而现金很紧、享受研究或动手过程时，不能只因花时间就判“不值”。
+  recommendation: 估计额外操作要多久，再看实际能省多少钱，不把“满减金额”都当成净节省。 问这段时间原本要留给什么，是否被挤掉；预算紧时，花时间省钱也可能合理。 留下少数确实好用的省钱办法，重复流程太麻烦、收益太小时就换一种安排。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/09-时间管理.md
+  anchor: time-value
+  cost_changes:
+    reduced:
+    - 时间、精力与注意力：减少低收益的反复操作。
+    - 机会：把时间留给更重要的工作、休息、关系或兴趣。
+    increased:
+    - 金钱：更省时的服务或更直接的购买方式，可能需要多付一点。
+  quality_effects:
+    maintained:
+    - emotional_wellbeing
+    improved:
+    - convenience
+    - time_autonomy
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: batch-tasks
+  name: 批量处理
+  category: time
+  source_type: guoxue_practice
+  summary: 相似的小事适当放在一起做，少重复准备、出门和切换。
+  status: accepted
+  cost_dimensions:
+  - time
+  - energy
+  - attention
+  - space
+  - decision
+  quality_dimensions:
+  - safety
+  - convenience
+  - time_autonomy
+  - stability
+  - sustainability
+  core_principles:
+  - P03
+  - P04
+  - P05
+  - P08
+  benefits:
+  - 提升便利和时间自主，让日常安排更稳定、容易维持。
+  risks:
+  - 批量采购过量、存放不当，造成浪费或食品安全问题。
+  - 集中处理延期，错过必要缴费或照护时点。
+  boundaries:
+  - 备餐与储存应遵守可靠食品安全要求；不能用批量处理跳过保鲜和卫生。
+  - 重要缴费不等到“批量日”逾期；大批购买和集中操作不保证更省。
+  applicable_when:
+  - 任务重复、时间要求相近，集中处理不会影响安全、时效或体验。
+  not_applicable_when:
+  - 食品储存条件不合适、账单有不同截止期、照护需求不可预期时，不硬凑一批。
+  recommendation: 找两三类适合合并的事，比如采购、账单检查、简单家务；先从一类试起。 按实际使用量和处理能力安排，不为了“批量划算”大量买货、把一天塞满。 做完看是否更轻松；容易拖延、需要及时完成或有储存限制的事，改回分次处理。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/09-时间管理.md
+  anchor: batch-tasks
+  cost_changes:
+    reduced:
+    - 时间、精力与注意力：减少重复准备、来回跑和任务切换。
+    - 决策：把重复小事安排成几段清楚的流程。
+    increased:
+    - 空间与时间：批量采购或备餐需要合适储存空间，也有集中处理的时间。
+  quality_effects:
+    maintained:
+    - safety
+    - stability
+    improved:
+    - convenience
+    - time_autonomy
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: default-options
+  name: 默认方案
+  category: time
+  source_type: guoxue_practice
+  summary: 反复出现的小事，给自己留一个已经好用的默认答案。
+  status: accepted
+  cost_dimensions:
+  - time
+  - attention
+  - decision
+  - emotion
+  quality_dimensions:
+  - convenience
+  - emotional_wellbeing
+  - stability
+  - sustainability
+  core_principles:
+  - P03
+  - P04
+  - P05
+  - P08
+  benefits:
+  - 提高便利与生活稳定，让注意力有余地，选择也更轻松。
+  risks:
+  - 旧方案不再适合变化后的需求。
+  - 为稳定复购过量囤货，或牺牲必要变化与体验。
+  boundaries:
+  - 默认不等于只有一种饭、只穿同一套衣服或不许有新体验。
+  - 不为标准化过量囤货；价格和产品变化时要允许换方案。
+  applicable_when:
+  - 需求重复、已有满意方案，继续研究难以带来明显体验改善。
+  not_applicable_when:
+  - 特殊饮食、身体变化、工作着装要求或新风险出现时，需要重新确认适用性。
+  recommendation: 找一个经常纠结的小问题，选出两三个自己满意、预算可承受的默认选项。 把选项记下来或放到顺手位置，普通日子直接用；想换口味、场景变了再另选。 当价格、身体情况或生活条件改变时再检查，不把默认答案变成终身承诺。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/09-时间管理.md
+  anchor: default-options
+  cost_changes:
+    reduced:
+    - 决策、注意力与时间：减少相同问题反复重做。
+    - 情绪：减轻“每次都必须选到最好”的纠结。
+    increased:
+    - 时间：第一次筛选、偶尔检查默认方案，仍要花一点功夫。
+  quality_effects:
+    maintained:
+    - stability
+    improved:
+    - convenience
+    - emotional_wellbeing
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: practical-automation
+  name: 合理自动化
+  category: time
+  source_type: guoxue_practice
+  summary: 把重复、规则清楚的动作交给可靠工具，同时保留检查和退出。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - maintenance
+  - decision
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - time_autonomy
+  - stability
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P05
+  - P06
+  benefits:
+  - 提高便利和日常稳定，减少遗漏；财务、数据与账号安全要守住。
+  risks:
+  - 误付、超预算自动续费或漏查异常账单。
+  - 过多权限、敏感数据泄露或工具故障。
+  boundaries:
+  - 不让自动续费绕过预算，不把支付设置完就当永久无需检查。
+  - 不随意上传敏感资料或共享密码，重要流程留备选。
+  applicable_when:
+  - 事项稳定、工具可靠、金额和权限可控，而且自动化确实减少重复工作。
+  not_applicable_when:
+  - 金额变化大、容易误付款、涉及敏感数据或需要个人判断的事项，不宜直接全自动。
+  recommendation: 挑一个重复而规则清楚的动作，用现有工具先做简单提醒、固定清单或合适的自动支付。 自动支付前确认金额、周期、账户余额、取消方式和提醒；数据权限只给必要范围。 保留账单检查、异常提醒和手动处理办法；工具比原任务更费心时就停用。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/09-时间管理.md
+  anchor: practical-automation
+  cost_changes:
+    reduced:
+    - 时间、精力与决策：减少重复输入和记忆负担。
+    - 注意力：用必要提醒代替不断惦记。
+    increased:
+    - 金钱与维护：软件、设置和后续检查可能有费用，也需要少量时间。
+  quality_effects:
+    maintained:
+    - safety
+    - stability
+    improved:
+    - convenience
+    - time_autonomy
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: attention-is-cost
+  name: 注意力也是成本
+  category: attention
+  source_type: guoxue_practice
+  summary: 没收你钱的产品，也可能每天收走你的时间和心思。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - attention
+  - decision
+  - emotion
+  quality_dimensions:
+  - time_autonomy
+  - emotional_wellbeing
+  - experience
+  core_principles:
+  - P03
+  - P04
+  - P05
+  - P08
+  benefits:
+  - 争取时间自主、情绪余地和更好的实际使用体验。
+  risks:
+  - 为所谓专注工具增加新订阅和管理负担。
+  - 减少应用时丢失必要联系、资料或无障碍功能。
+  boundaries:
+  - 娱乐本身可以有价值；重点是你是否主动选择，而不是给每次刷视频打道德分。
+  - 不把付费工具当作专注保证，账号、数据和必要联系不能为省心随意丢掉。
+  applicable_when:
+  - 经常觉得信息很多、事情没做，却想不清注意力去了哪里。
+  not_applicable_when:
+  - 工作、照护、社交支持或无障碍需求依赖某个平台时，要保留必要通道，不能一删了之。
+  recommendation: 观察几天：哪些应用打开后经常偏离原本目的，哪些提醒把你拉回去。 先关掉一项无用入口，或换成目的明确的用法；已有好用工具，就不为管理注意力再装一大套软件。 需要时比较替代方案的功能、价格、权限和使用负担，留下真正顺手的一种。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/10-注意力管理.md
+  anchor: attention-is-cost
+  cost_changes:
+    reduced:
+    - 注意力与时间：减少无目的停留和反复打开。
+    - 情绪：少一点被推荐内容、攀比和促销持续牵动。
+    increased:
+    - 金钱：合适的无广告工具可能收费，但也可能已有免费的替代方式。
+    - 决策：最初要检查自己真正需要哪些功能。
+  quality_effects:
+    maintained:
+    - experience
+    improved:
+    - time_autonomy
+    - emotional_wellbeing
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: essential-notifications
+  name: 少通知
+  category: attention
+  source_type: guoxue_practice
+  summary: 让消息在确实需要你时再响，不让每个商家和群聊都住进脑子。
+  status: accepted
+  cost_dimensions:
+  - time
+  - energy
+  - attention
+  - decision
+  - emotion
+  quality_dimensions:
+  - safety
+  - time_autonomy
+  - emotional_wellbeing
+  - relationships
+  core_principles:
+  - P03
+  - P04
+  - P05
+  - P08
+  benefits:
+  - 改善时间自主与情绪状态，保留必要联系和安全提醒。
+  risks:
+  - 关闭重要联系、账单或安全提醒后漏掉必要事项。
+  - 统一静音规则与值班或照护要求冲突。
+  boundaries:
+  - 不关闭必要安全警报和紧急联系渠道。
+  - 减少通知不等于拒绝沟通；重要的人和协作对象需要知道怎样联系到你。
+  applicable_when:
+  - 通知很多，其中不少并不要求你马上处理。
+  not_applicable_when:
+  - 值班、照护、紧急响应或某些工作要求随时接收消息，不能照搬统一静音规则。
+  recommendation: 先关促销、推荐、无关互动和不需要实时处理的群提醒。 给工作必要消息、重要联系人和安全提醒保留合适通道；非紧急消息安排自己能接受的查看时间。 试用几天再调整，确认没漏掉必要账单、照护或工作信息。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/10-注意力管理.md
+  anchor: essential-notifications
+  cost_changes:
+    reduced:
+    - 注意力、时间与精力：减少打断和反复切换。
+    - 情绪：少一点永远“还有消息没回”的催促感。
+    increased:
+    - 时间与决策：需要一次设置，之后偶尔确认是否错过重要通知。
+  quality_effects:
+    maintained:
+    - safety
+    - relationships
+    improved:
+    - time_autonomy
+    - emotional_wellbeing
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: information-diet
+  name: 信息饮食
+  category: attention
+  source_type: guoxue_practice
+  summary: 先看会影响真实生活和决定的信息，再给好奇与娱乐留自己的位置。
+  status: accepted
+  cost_dimensions:
+  - time
+  - attention
+  - decision
+  - emotion
+  quality_dimensions:
+  - safety
+  - time_autonomy
+  - emotional_wellbeing
+  - experience
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P08
+  benefits:
+  - 提升时间自主与情绪稳定，帮助现实选择；也保留兴趣、体验和正常社会连接。
+  risks:
+  - 只听符合自身偏好的内容，形成信息盲点。
+  - 错信未经核实的健康、安全或专业信息。
+  boundaries:
+  - 信息筛选不等于只听自己喜欢的话，重要决定要允许不同证据进入。
+  - 健康、安全和专业问题，不靠短视频评论区替代核实与必要指导。
+  applicable_when:
+  - 信息越收越多、现实行动越做越少，或者某些内容持续让你焦虑。
+  not_applicable_when:
+  - 研究、创作、专业工作需要广泛阅读；不能把暂时没有直接用处的信息一律删除。
+  recommendation: 写下眼下真正要处理的两三个问题，先关注能帮助这些问题的可靠信息。 减少重复账号、纯焦虑推送和看完无法判断真假的内容；关键健康与安全信息要核对可靠来源。 给兴趣和娱乐留主动选择的时间，不要求每次阅读都必须换成产出。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/10-注意力管理.md
+  anchor: information-diet
+  cost_changes:
+    reduced:
+    - 注意力、时间与情绪：减少反复追无关争论、重复资讯和焦虑营销。
+    - 决策：给现实问题保留清楚的信息入口。
+    increased:
+    - 时间：筛选可靠来源、核对关键说法需要投入，尤其涉及重要决定时。
+  quality_effects:
+    maintained:
+    - safety
+    - experience
+    improved:
+    - time_autonomy
+    - emotional_wellbeing
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: research-stop
+  name: 信息搜集止损
+  category: attention
+  source_type: guoxue_practice
+  summary: 研究是为了把选择做出来，不是为了证明所有选项都看过。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - attention
+  - decision
+  - emotion
+  quality_dimensions:
+  - safety
+  - convenience
+  - time_autonomy
+  - emotional_wellbeing
+  core_principles:
+  - P03
+  - P05
+  - P07
+  - P08
+  benefits:
+  - 争取时间自主、便利和轻松，重要功能、安全与可承受预算仍要满足。
+  risks:
+  - 过早停止核查，遗漏关键风险与条件。
+  - 错误地把预算限制下的必要研究视为浪费。
+  boundaries:
+  - “买 100 元商品研究 4 小时”只是例子；有人的预算限制、经验不足或研究兴趣让这段时间合理。
+  - 没有统一时限，必要核实不能为了止损跳过。
+  applicable_when:
+  - 普通、低风险、可退换的生活选择，已经有满足需求的选项。
+  not_applicable_when:
+  - 预算非常紧、商品难以验货，或涉及医疗、安全、合同和重大财务决定时，不能随意缩减核查。
+  recommendation: 先列出必须满足的功能、预算、风险检查和退出条件，筛掉不合格选项。 给普通低风险选择一个可调整的比较范围或结束时间，符合条件后就准备决定。 发现新信息会改变关键判断时继续查；只剩重复评论和小价差时停下来。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/10-注意力管理.md
+  anchor: research-stop
+  cost_changes:
+    reduced:
+    - 时间、注意力与决策：停止回报很小的重复比较。
+    - 情绪：减少追求绝对最优带来的纠结。
+    increased:
+    - 金钱：可能放过一笔很小的价差；高风险选择仍需足够核查时间。
+  quality_effects:
+    maintained:
+    - safety
+    improved:
+    - convenience
+    - time_autonomy
+    - emotional_wellbeing
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: effective-hourly-return
+  name: 时薪思维
+  category: work
+  source_type: guoxue_practice
+  summary: 看收入总额，也看取得它需要多少时间、精力和压力。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - decision
+  - emotion
+  - opportunity
+  quality_dimensions:
+  - sleep
+  - time_autonomy
+  - emotional_wellbeing
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P05
+  - P06
+  - P08
+  benefits:
+  - 维护合理休息、情绪状态、时间自主和生活稳定。
+  risks:
+  - 粗略计算忽略保障、成长、稳定性与必要责任。
+  - 只看单一数字就改变工作，过渡收入与生活失衡。
+  boundaries:
+  - 粗算时薪不是给人的价值定价，也不代表所有时间都该出售。
+  - 不鼓励据一个数字冲动辞职；劳动、税务和合同问题需要具体事实与适合的专业帮助。
+  applicable_when:
+  - 比较岗位、额外接单、加班安排或正在寻找工作中的低效环节。
+  not_applicable_when:
+  - 初期学习、职业转型、照护责任或就业选择有限时，不能只按眼前金额除以小时下结论。
+  recommendation: 记录一段时间的实际工作、必要准备、通勤和占用休息的时段，注明哪些数据只是估计。 用实际收入、相关支出和总投入时间作粗略比较，再补充稳定性、成长、保障、兴趣与家庭安排。
+    先找可协商、可调整的一项流程；重大职业变化要评估过渡预算、责任和现实机会。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/11-工作.md
+  anchor: effective-hourly-return
+  cost_changes:
+    reduced:
+    - 时间、精力与机会：识别回报很低的额外投入。
+    - 金钱：把通勤、必要装备等真实工作支出看清楚。
+    increased:
+    - 时间与决策：收集工时、收入和支出信息需要一点记录；调整也可能有风险与成本。
+  quality_effects:
+    maintained:
+    - stability
+    improved:
+    - sleep
+    - time_autonomy
+    - emotional_wellbeing
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: useful-work-tools
+  name: 工具优于苦熬
+  category: work
+  source_type: guoxue_practice
+  summary: 一个可靠工具如果持续省时，就值得比较，而不是把重复劳动当勤奋奖章。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - maintenance
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - time_autonomy
+  - stability
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P05
+  - P07
+  benefits:
+  - 改善便利和时间自主，争取更稳定的工作流程；信息安全与结果可靠性仍要守住。
+  risks:
+  - 数据泄露、权限不当或违反单位规则。
+  - 工具结果错误、维护负担增加，关键检查被省略。
+  boundaries:
+  - 遵守工作规则和数据权限；未经允许不把客户、同事或单位敏感资料交给外部工具。
+  - 工具不保证准确；自动化输出需要相应检查，不把省时变成省掉责任。
+  applicable_when:
+  - 任务重复、目标明确，工具合规可靠，省下的时间和精力明显多于上手及维护所需的投入。
+  not_applicable_when:
+  - 涉及机密、个人数据、安全关键结果，或单位对工具有明确限制时，不能随意上传或替换流程。
+  recommendation: 挑一个频繁重复的任务，先确认单位已有工具或简单模板能不能解决。 用非敏感材料小范围试，比较实际省时、出错和检查负担，把许可、权限与学习时间算进去。 有效再保留，留好原流程和退出办法；需要判断的关键结果仍由合适的人检查。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/11-工作.md
+  anchor: useful-work-tools
+  cost_changes:
+    reduced:
+    - 时间与精力：减少规则明确的重复工作。
+    - 维护与注意力：在工具确实可靠时，减少反复补错和查找。
+    increased:
+    - 金钱、时间与维护：购买、学习、设置和更新工具也要付出。
+  quality_effects:
+    maintained:
+    - safety
+    - stability
+    improved:
+    - convenience
+    - time_autonomy
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: useful-career-investment
+  name: 把职业投入留给真本事
+  category: work
+  source_type: guoxue_practice
+  summary: 能力、作品、经验、必要资格和真实关系值得投，纯粹“显得很忙”的包装要算清楚。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - emotion
+  - opportunity
+  quality_dimensions:
+  - relationships
+  - experience
+  - stability
+  - sustainability
+  core_principles:
+  - P02
+  - P03
+  - P05
+  - P07
+  - P08
+  - P10
+  benefits:
+  - 争取更扎实的工作体验与长期稳定，也保留重要的协作关系。
+  risks:
+  - 误删必要资质、合理汇报与真实协作投入。
+  - 把重要关系纯粹工具化，或用虚假作品与经验包装。
+  boundaries:
+  - 不造假证书、作品和经验，不用“反形式主义”回避合理工作责任。
+  - 重要关系不是工具清单；合作、感谢与互助可以有真实价值。
+  applicable_when:
+  - 职业投入越来越多，却不清楚哪些真正带来能力、成果或必要联系。
+  not_applicable_when:
+  - 行业要求的资格、合理汇报、信任建立、求职表达和团队协作，不能统统判成包装。
+  recommendation: 先确认当前工作或目标岗位真正需要的能力、成果和必要资格。 每项投入问一句：学到什么、做出什么、解决什么；保留有实际价值的学习和协作。 对只增加展示、却长期挤掉休息与有效工作的活动，减少频率或寻找更直接的替代。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/11-工作.md
+  anchor: useful-career-investment
+  cost_changes:
+    reduced:
+    - 金钱、时间与精力：减少无效课程、证书和职业排场。
+    - 情绪与注意力：减少围绕人设的比较和维护。
+    increased:
+    - 时间与金钱：真实学习、合适资质、作品打磨与关系维护需要投入。
+  quality_effects:
+    maintained:
+    - relationships
+    - stability
+    improved:
+    - experience
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: sustainable-workload
+  name: 不拿身体换低价值收益
+  category: work
+  source_type: guoxue_practice
+  summary: 看清持续透支的代价，尽可能给工作留下恢复和安全边界。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - emotion
+  - opportunity
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - health
+  - sleep
+  - safety
+  - emotional_wellbeing
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P05
+  - P06
+  - P08
+  - P09
+  benefits:
+  - 优先维护健康、合理睡眠、安全和长期可持续；生活稳定同样要考虑。
+  risks:
+  - 工时调整影响必要收入，未安排过渡导致财务失衡。
+  - 以个人自律替代工作场所必要安全制度与防护。
+  boundaries:
+  - 不以个人意志替代工作场所必要防护和安全制度。
+  - 不把被迫承受风险的人归咎为不会生活；也不对所有工作收益作统一价值排名。
+  applicable_when:
+  - 负担已经持续影响身体或生活，且希望找出具体可调整的一项。
+  not_applicable_when:
+  - 收入紧张、照护责任重或就业选择有限时，不轻率要求别人少工作或马上离职。
+  recommendation: 观察哪些工作安排反复破坏休息、饮食或带来安全风险，先把问题说具体。 在可行范围内减少一项低价值额外任务，争取休息、排班调整或合适支持；必要时使用正规求助渠道。 需要改变岗位或工时之前，先看必要开支、过渡余地和替代机会；明显健康问题应寻求专业评估。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/11-工作.md
+  anchor: sustainable-workload
+  cost_changes:
+    reduced:
+    - 健康与安全风险：减少可避免的长期透支和疲劳作业。
+    - 精力与情绪：减少持续硬撑和失控的额外任务。
+    increased:
+    - 金钱与机会：减少某些额外工时或调整安排，可能影响收入和短期机会。
+  quality_effects:
+    maintained:
+    - health
+    - sleep
+    - safety
+    - stability
+    improved:
+    - emotional_wellbeing
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: problem-led-learning
+  name: 问题驱动学习
+  category: learning
+  source_type: guoxue_practice
+  summary: 先带一个真实问题进门，再找需要的知识和练习。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - decision
+  quality_dimensions:
+  - safety
+  - convenience
+  - experience
+  - sustainability
+  core_principles:
+  - P03
+  - P05
+  - P07
+  - P08
+  benefits:
+  - 提升生活便利、真实学习体验和可持续性；重要知识的可靠性仍要保证。
+  risks:
+  - 只学眼前步骤，遗漏必要基础。
+  - 普通任务的经验被误用于健康、安全或其他专业问题。
+  boundaries:
+  - 健康、安全、法律和职业资格相关知识，不以“解决一次问题”为足够可靠的标准。
+  - 兴趣与广泛阅读也有价值，不要求所有学习马上变现。
+  applicable_when:
+  - 学习时间有限，或已经看了很多资料却一直没有具体行动。
+  not_applicable_when:
+  - 专业训练、长期基础教育需要系统学习；不能只学眼前步骤，跳过必要理论与前置知识。
+  recommendation: 把问题写成可操作的句子，例如“我要看懂这份账单”或“做出一个能使用的表格”。 找一份适合基础、内容可靠的材料，边学边尝试；关键概念不懂就补，不只抄操作。 用结果检验哪里还不会，再决定下一步；对纯兴趣学习，也可以把“理解和享受”写成目标。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/12-学习.md
+  anchor: problem-led-learning
+  cost_changes:
+    reduced:
+    - 时间、注意力与决策：减少无方向地跳课程、囤资料。
+    - 金钱：避免为当前并不需要的大包内容反复付费。
+    increased:
+    - 时间与精力：明确问题、补齐基础和实际练习，仍然需要投入。
+  quality_effects:
+    maintained:
+    - safety
+    improved:
+    - convenience
+    - experience
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: practice-before-courses
+  name: 输出优于囤课
+  category: learning
+  source_type: guoxue_practice
+  summary: 买过、收藏过、播放过，都不等于能用；留一点时间把内容做成自己的结果。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - space
+  - emotion
+  quality_dimensions:
+  - emotional_wellbeing
+  - experience
+  - sustainability
+  core_principles:
+  - P03
+  - P05
+  - P07
+  - P08
+  benefits:
+  - 改善真实体验与学习的长期可持续性，也减少无谓焦虑。
+  risks:
+  - 为了用完已有材料继续学习错误或过时内容。
+  - 公开输出侵犯隐私版权，或制造新的展示压力。
+  boundaries:
+  - 不把公开展示和更新频率当作学习成绩，休息、思考和阅读也是过程。
+  - 公开作品要尊重版权、隐私和真实能力；专业结果需要相应核验。
+  applicable_when:
+  - 材料已经够用，却总在搜新课、收藏和换学习计划。
+  not_applicable_when:
+  - 资料明显错误、已经过时或缺少必要基础时，应换可靠材料，不能为了“用完已有的”继续受误导。
+  recommendation: 选一份已经拥有、与当前问题有关的材料，暂停继续买相似内容。 看完一个小部分就做一次练习、写自己的解释或完成一个小作品；输出可以只给自己看。 检查卡在哪里，针对缺口补材料或寻求反馈，不用购买更多内容掩盖练习不足。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/12-学习.md
+  anchor: practice-before-courses
+  cost_changes:
+    reduced:
+    - 金钱与空间：减少重复购买课程、资料和占位不用的书。
+    - 注意力与情绪：减少不断追新课、欠学习账的压力。
+    increased:
+    - 时间与精力：练习、写总结、做作品和获得反馈，比只播放内容更需要投入。
+  quality_effects:
+    maintained:
+    - emotional_wellbeing
+    improved:
+    - experience
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: fit-for-purpose-learning
+  name: 80% 够用：普通技能先能解决问题
+  category: learning
+  source_type: guoxue_practice
+  summary: 很多普通生活技能，先做到能可靠解决常见问题，就已经很有价值。
+  status: accepted
+  cost_dimensions:
+  - time
+  - energy
+  - emotion
+  - opportunity
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - convenience
+  - emotional_wellbeing
+  - experience
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P07
+  - P08
+  - P09
+  benefits:
+  - 提升便利和真实体验，让学习更能长期坚持；必要安全与准确性必须守住。
+  risks:
+  - 把 80% 误解为容许任意两成错误。
+  - 把低风险技能的够用要求套到医疗、安全或职业责任上。
+  boundaries:
+  - 80% 是宽松比喻，没有统一百分比，也不是“允许错两成”。
+  - 不知道重要细节或风险时先核实、求助，不用“够用”给危险操作找理由。
+  applicable_when:
+  - 普通、低风险、结果可检查和可修正的生活技能，目标只是满足日常需求。
+  not_applicable_when:
+  - 健康、安全、法律、职业资质、专业职责和其他容错低的任务，不按这句话降低准确要求。
+  recommendation: 明确一个普通、低风险的使用场景，写下“能用”的标准与必须守住的要求。 把必要基础学好，完成一次可检查的小任务；常见错误和风险也要认识。 够用后先去使用，遇到新问题再加深；愿意深入的兴趣和职业目标，可以继续投入。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/12-学习.md
+  anchor: fit-for-purpose-learning
+  cost_changes:
+    reduced:
+    - 时间、精力与机会：减少不必要的专家级打磨。
+    - 情绪：降低事事求完美带来的启动压力。
+    increased:
+    - 时间：需要判断当前水平是否真的可靠，遇到新需求时继续补齐。
+  quality_effects:
+    maintained:
+    - safety
+    improved:
+    - convenience
+    - emotional_wellbeing
+    - experience
+    - sustainability
+  effect_note: 预期方向与判断目标，不保证个体收益；实际采用前核查条件和风险。
+- id: guide-easy-cleaning
+  name: 易清洁原则
+  category: housework
+  source_type: guoxue_practice
+  summary: 把以后要怎么打扫，放进今天的购买决定里。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - maintenance
+  quality_dimensions:
+  - comfort
+  - convenience
+  - sustainability
+  core_principles:
+  - P03
+  - P04
+  - P06
+  - P08
+  benefits:
+  - 保持正常的清洁与居住舒适
+  - 让家务更容易完成，减少积压
+  risks:
+  - 盲目追求清洁便利，买了不适合实际用途的材质或结构
+  boundaries:
+  - 易清洁不能替代必要清洁，也不能牺牲产品安全与实际功能
+  - 按产品说明使用清洁用品，不随意混用
+  applicable_when:
+  - 准备添置家具、装修或更换常用生活用品
+  - 家务长期占用过多时间与体力
+  not_applicable_when:
+  - 现有物品已经好用，仅为了“更好清洁”又买一套
+  - 自己很享受精细照料，且成本可承受
+  recommendation: 下次买常用物品时，先问清怎么清洁，再决定要不要买。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/13-家务与收纳.md
+  anchor: guide-easy-cleaning
+  cost_changes:
+    reduced:
+    - 减少反复清洁、拆装和特殊清洁用品的支出
+    - 减少长期家务时间与体力负担
+    increased:
+    - 购买前需要查看结构和清洁说明
+    - 更易维护的方案可能购买价格更高
+  quality_effects:
+    maintained:
+    - 保持正常的清洁与居住舒适
+    improved:
+    - 让家务更容易完成，减少积压
+- id: guide-fewer-ornaments
+  name: 少摆件
+  category: housework
+  source_type: guoxue_practice
+  summary: 留下真喜欢的，把只负责积灰的东西减下来。
+  status: accepted
+  cost_dimensions:
+  - time
+  - energy
+  - space
+  - maintenance
+  quality_dimensions:
+  - comfort
+  - convenience
+  - experience
+  core_principles:
+  - P03
+  - P04
+  - P07
+  - P08
+  benefits:
+  - 保留真实审美、收藏和纪念体验
+  - 让常用台面更顺手，减少视觉与家务负担
+  risks:
+  - 误删有情感价值或属于家人的物品
+  boundaries:
+  - 不替家人擅自处理东西
+  - 少摆件没有统一数量，不能把个人审美当成无效需求
+  applicable_when:
+  - 摆件已经妨碍日常使用和清洁
+  - 自己对其中很多物品已经没有兴趣
+  not_applicable_when:
+  - 收藏与布置本身就是重要爱好
+  - 只是因为别人说简约才强行清空
+  recommendation: 先整理一个台面，留下喜欢的，再决定是否继续。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/13-家务与收纳.md
+  anchor: guide-fewer-ornaments
+  cost_changes:
+    reduced:
+    - 减少擦灰、整理与搬家的负担
+    - 减少被低价值摆件占据的空间
+    increased:
+    - 筛选和转赠需要一次性时间
+    - 处理后可能需要调整陈列方式
+  quality_effects:
+    maintained:
+    - 保留真实审美、收藏和纪念体验
+    improved:
+    - 让常用台面更顺手，减少视觉与家务负担
+- id: guide-fixed-places
+  name: 物品固定位置
+  category: housework
+  source_type: guoxue_practice
+  summary: 让常用物品有一个拿得顺手、放得回去的家。
+  status: accepted
+  cost_dimensions:
+  - time
+  - energy
+  - attention
+  - decision
+  quality_dimensions:
+  - convenience
+  - emotional_wellbeing
+  - time_autonomy
+  core_principles:
+  - P03
+  - P04
+  - P05
+  - P08
+  benefits:
+  - 保持家人取用方便
+  - 常用物品更容易找到，出门和收拾更省心
+  risks:
+  - 为了看起来整齐，把东西放到危险或难取的位置
+  boundaries:
+  - 药品、危险品和贵重物品按安全要求存放
+  - 紧急用品应容易找到，不为隐藏杂乱而藏得过深
+  applicable_when:
+  - 常用品反复丢位置
+  - 多人共用物品，需要简单一致的取放习惯
+  not_applicable_when:
+  - 固定位置不方便身体条件或实际使用
+  - 公共物品必须遵循已有安全管理规则
+  recommendation: 先给最常找不到的几样东西安排位置，边用边改。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/13-家务与收纳.md
+  anchor: guide-fixed-places
+  cost_changes:
+    reduced:
+    - 减少反复寻找和临时收拾
+    - 减少每天重新决定往哪放的负担
+    increased:
+    - 第一次安排位置需要试用和沟通
+    - 必要时可能添置少量合适的收纳工具
+  quality_effects:
+    maintained:
+    - 保持家人取用方便
+    improved:
+    - 常用物品更容易找到，出门和收拾更省心
+- id: guide-sensible-stock
+  name: 不过量囤货
+  category: housework
+  source_type: guoxue_practice
+  summary: 囤的是确定会用掉的需要，不是对折扣的信仰。
+  status: accepted
+  cost_dimensions:
+  - money
+  - space
+  - maintenance
+  - attention
+  - opportunity
+  quality_dimensions:
+  - convenience
+  - stability
+  - sustainability
+  core_principles:
+  - P03
+  - P04
+  - P05
+  - P06
+  - P08
+  benefits:
+  - 保留日常需要与合理应急余量
+  - 库存更清楚，空间与日常预算更有余地
+  risks:
+  - 库存压得过低，遇到断供或特殊情况无法满足基本需要
+  - 为了清库存使用过期或储存不当的产品
+  boundaries:
+  - 应急余量因地点、家庭和供应条件而异
+  - 食品及危险品按要求存放，不因买得多而勉强使用
+  applicable_when:
+  - 日用品和食品反复买重、用不完
+  - 居住空间小或搬家频繁
+  not_applicable_when:
+  - 采购不便，需要合理库存保证基本生活
+  - 必要应急物资尚不充足
+  recommendation: 采购前先查库存，把必需余量与促销囤货分开。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/13-家务与收纳.md
+  anchor: guide-sensible-stock
+  cost_changes:
+    reduced:
+    - 减少浪费、储存管理和闲置资金
+    - 减少重复购买与库存操心
+    increased:
+    - 减少库存后，可能需要更频繁采购
+    - 部分商品无法享受大包装单价
+  quality_effects:
+    maintained:
+    - 保留日常需要与合理应急余量
+    improved:
+    - 库存更清楚，空间与日常预算更有余地
+- id: guide-relationship-quality
+  name: 关系质量优于数量
+  category: relationships
+  source_type: guoxue_practice
+  summary: 把相处时间留给能彼此尊重、真实来往的人。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - emotion
+  quality_dimensions:
+  - relationships
+  - emotional_wellbeing
+  - time_autonomy
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P08
+  benefits:
+  - 保留必要往来、责任和尊重
+  - 给重要的人更多真实陪伴与回应
+  risks:
+  - 把关系只当成收益计算，或借此彻底断绝联系
+  boundaries:
+  - 人与关系不能只按花费、收入或可利用程度衡量
+  - 不能把照顾亲友等必要责任全部当作无效成本
+  applicable_when:
+  - 无效应酬明显挤占休息与重要关系
+  - 社交安排超过自己的承受能力
+  not_applicable_when:
+  - 正因孤立而缺少支持，需要建立真实联系
+  - 照护、工作或公共责任需要合理参与
+  recommendation: 少参加一次纯凑数的活动，把时间认真留给一个重要的人。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/14-社交关系.md
+  anchor: guide-relationship-quality
+  cost_changes:
+    reduced:
+    - 减少勉强参加、反复表演和无意义应酬
+    - 减少不必要的时间、开销与情绪负担
+    increased:
+    - 认真维系关系需要持续时间与关心
+    - 调整交往边界可能需要沟通
+  quality_effects:
+    maintained:
+    - 保留必要往来、责任和尊重
+    improved:
+    - 给重要的人更多真实陪伴与回应
+- id: guide-no-conformity-spending
+  name: 不为了合群消费
+  category: relationships
+  source_type: guoxue_practice
+  summary: 愿意一起玩，也可以拥有自己的预算。
+  status: accepted
+  cost_dimensions:
+  - money
+  - emotion
+  - opportunity
+  quality_dimensions:
+  - relationships
+  - emotional_wellbeing
+  - stability
+  core_principles:
+  - P02
+  - P05
+  - P08
+  - P10
+  benefits:
+  - 保留尊重与真实交往
+  - 消费更符合自己的意愿，财务安排更稳
+  risks:
+  - 表达方式伤害关系，或用节省当成批评别人消费的理由
+  boundaries:
+  - 不同预算不等于不同人格价值
+  - 愿意花钱的朋友没有错，自己不参加也不用证明更高明
+  applicable_when:
+  - 消费动机主要是怕落后或怕被看轻
+  - 活动开销已经超过预算
+  not_applicable_when:
+  - 自己确实珍惜这次共同体验，且预算充足
+  - 必要礼节或职业安排有实际意义
+  recommendation: 先报自己的预算，再商量共同体验的方案。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/14-社交关系.md
+  anchor: guide-no-conformity-spending
+  cost_changes:
+    reduced:
+    - 减少为比较和怕被评价而产生的开销
+    - 减少消费后悔及必要预算被挤占
+    increased:
+    - 提出不同方案或解释边界需要沟通
+    - 可能错过一些自己也喜欢的活动
+  quality_effects:
+    maintained:
+    - 保留尊重与真实交往
+    improved:
+    - 消费更符合自己的意愿，财务安排更稳
+- id: guide-invest-important-relationships
+  name: 重要关系值得投入
+  category: relationships
+  source_type: guoxue_practice
+  summary: 重要的人，值得你留出钱，更值得留出时间与心思。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - emotion
+  - opportunity
+  quality_dimensions:
+  - relationships
+  - experience
+  - emotional_wellbeing
+  - stability
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P08
+  - P10
+  benefits:
+  - 守住必要责任与相互尊重
+  - 让关心成为对方实际能感受到的支持
+  risks:
+  - 为了证明重视而借债或过度付出
+  - 把关心变成控制对方或索要回报
+  boundaries:
+  - 投入须尊重对方意愿，不是花钱越多越好
+  - 保护基本生活和长期财务安全，照顾别人也要照顾自己
+  applicable_when:
+  - 重要关系长期被工作或琐事挤到后面
+  - 准备安排探望、礼物、共同体验或必要照顾
+  not_applicable_when:
+  - 通过昂贵礼物代替沟通，或试图购买关系
+  - 被要求承担持续超出能力的单向付出
+  recommendation: 为一个重要的人做一件具体、合适、负担得起的事。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/14-社交关系.md
+  anchor: guide-invest-important-relationships
+  cost_changes:
+    reduced:
+    - 减少为比较礼物价格和做排场而产生的负担
+    - 减少不合适、对方并不需要的礼物与活动
+    increased:
+    - 陪伴、见面、照顾和合适礼物需要真实资源
+    - 对方的需要可能与自己的方便不一致
+  quality_effects:
+    maintained:
+    - 守住必要责任与相互尊重
+    improved:
+    - 让关心成为对方实际能感受到的支持
+- id: guide-travel-not-checklist
+  name: 旅行不是打卡竞赛
+  category: leisure
+  source_type: guoxue_practice
+  summary: 行程留给真正想体验的事，不把景点数量当成绩。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - decision
+  - emotion
+  quality_dimensions:
+  - experience
+  - comfort
+  - relationships
+  - time_autonomy
+  core_principles:
+  - P03
+  - P05
+  - P07
+  - P08
+  - P09
+  - P10
+  benefits:
+  - 保留休息、身体舒适和同行者需要
+  - 有时间真正体验当地、兴趣与共同相处
+  risks:
+  - 安排过松却未确认交通、营业与预约，反而增加折腾
+  boundaries:
+  - 留白不等于忽略安全、交通与基本住宿安排
+  - 不把自己的慢游偏好强加给同行者
+  applicable_when:
+  - 行程主要围绕排名、数量或发朋友圈
+  - 同行者体力、年龄或兴趣差异较大
+  not_applicable_when:
+  - 本人确实享受密集探索且身体条件适合
+  - 必须遵守预约、团队安排或安全时间窗口
+  recommendation: 删掉一个只为凑数的项目，把时间留给最想体验的事。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/15-旅行与娱乐.md
+  anchor: guide-travel-not-checklist
+  cost_changes:
+    reduced:
+    - 减少不感兴趣的门票、赶路和排队
+    - 减少行程协调与必须完成的压力
+    increased:
+    - 聚焦喜欢的项目时，某项体验可能花费更多
+    - 留白意味着看过的景点数量可能减少
+  quality_effects:
+    maintained:
+    - 保留休息、身体舒适和同行者需要
+    improved:
+    - 有时间真正体验当地、兴趣与共同相处
+- id: guide-off-peak-leisure
+  name: 淡季错峰
+  category: leisure
+  source_type: guoxue_practice
+  summary: 时间有弹性时，比较人少、价稳、体验合适的选择。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  quality_dimensions:
+  - experience
+  - comfort
+  - convenience
+  - safety
+  core_principles:
+  - P01
+  - P05
+  - P06
+  - P08
+  benefits:
+  - 守住出行安全与想要的核心体验
+  - 条件合适时，有更多空间与时间享受活动
+  risks:
+  - 因低价忽略停业、恶劣天气、交通减少或不可退费用
+  boundaries:
+  - 不承诺淡季一定便宜、人少或体验更好
+  - 安全与必要服务不能用折扣补偿
+  applicable_when:
+  - 假期或活动时间有一定弹性
+  - 淡季的核心体验仍符合期待
+  not_applicable_when:
+  - 为了错峰要付出很高的请假或照护成本
+  - 淡季天气、交通或服务条件不适合安全出行
+  recommendation: 比较两三个可行时段的完整条件，再决定是否错峰。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/15-旅行与娱乐.md
+  anchor: guide-off-peak-leisure
+  cost_changes:
+    reduced:
+    - 在实际价格更合适时降低交通、住宿与活动开销
+    - 减少拥挤、排队与反复抢订的负担
+    increased:
+    - 需要核实营业、天气、交通和退改条件
+    - 请假、改期或配合同伴可能产生额外成本
+  quality_effects:
+    maintained:
+    - 守住出行安全与想要的核心体验
+    improved:
+    - 条件合适时，有更多空间与时间享受活动
+- id: guide-entertainment-hour-cost
+  name: 每小时娱乐成本
+  category: leisure
+  source_type: guoxue_practice
+  summary: 算一下真实玩了多久，帮助识别“买了却没玩”的花费。
+  status: accepted
+  cost_dimensions:
+  - money
+  - attention
+  - decision
+  - opportunity
+  quality_dimensions:
+  - experience
+  - emotional_wellbeing
+  - sustainability
+  core_principles:
+  - P03
+  - P05
+  - P07
+  - P08
+  benefits:
+  - 保留真喜欢的娱乐及生活预算
+  - 把娱乐资源留给实际享受的活动
+  risks:
+  - 把所有快乐数学化，或为了摊薄价格沉迷使用
+  boundaries:
+  - 费用与时长必须采用相同统计范围，估算须承认不确定
+  - 该比值不能抵消健康、睡眠和安全问题，也不是快乐排行榜
+  applicable_when:
+  - 比较内容相近的娱乐选择
+  - 检查会员、游戏或设备是否真正使用
+  not_applicable_when:
+  - 只凭小时数评价演出、纪念日、旅行或陪伴
+  - 为“值回票价”增加本不需要的娱乐时间
+  recommendation: 只拿这个比值复盘一项消费，并同时写下真实体验。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/15-旅行与娱乐.md
+  anchor: guide-entertainment-hour-cost
+  cost_changes:
+    reduced:
+    - 识别低使用率开销，减少无意义续费与重复购买
+    - 减少根据宣传而非真实使用做决定
+    increased:
+    - 记录与复盘需要少量时间
+    - 追求最低比值可能造成过度娱乐的压力
+  quality_effects:
+    maintained:
+    - 保留真喜欢的娱乐及生活预算
+    improved:
+    - 把娱乐资源留给实际享受的活动
+- id: guide-safety-reserve
+  name: 安全冗余
+  category: safety
+  source_type: guoxue_practice
+  summary: 为后果严重、现实可防的风险，留一条可靠退路。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - space
+  - maintenance
+  - safety_risk
+  - health_risk
+  quality_dimensions:
+  - safety
+  - stability
+  - sustainability
+  - health
+  core_principles:
+  - P01
+  - P03
+  - P05
+  - P06
+  - P08
+  benefits:
+  - 保持基本生活与重要资料的可恢复性
+  - 面对常见中断时，有更明确的应对办法
+  risks:
+  - 过度购买、误解保障范围，或以为有保障就可以冒险
+  boundaries:
+  - 安全冗余不能保证零风险，也不能替代安全习惯
+  - 不推荐具体保险产品；必要保障取决于个人情况，重要选择需充分理解条件
+  applicable_when:
+  - 一处故障就会影响基本生活或造成重大损失
+  - 已有应急与保障安排不清楚、无法实际使用
+  not_applicable_when:
+  - 为了缓解焦虑不断购买重复、过量防护
+  - 方案超出预算或根本无法覆盖实际风险
+  recommendation: 先检查一个最重要的风险是否有可用退路，而不是先买东西。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/16-安全与风险.md
+  anchor: guide-safety-reserve
+  cost_changes:
+    reduced:
+    - 降低部分可预防风险造成的损失与中断可能
+    - 减少发生问题后仓促补救的负担
+    increased:
+    - 必要保障、应急物资和备份需要预算与空间
+    - 需要检查、轮换和理解保障条件
+  quality_effects:
+    maintained:
+    - 保持基本生活与重要资料的可恢复性
+    improved:
+    - 面对常见中断时，有更明确的应对办法
+- id: guide-essential-protection
+  name: 不省必要防护的钱
+  category: safety
+  source_type: guoxue_practice
+  summary: 必须合格、合适的防护，不拿低价凑合。
+  status: accepted
+  cost_dimensions:
+  - money
+  - maintenance
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - health
+  - safety
+  - stability
+  core_principles:
+  - P01
+  - P03
+  - P06
+  - P08
+  benefits:
+  - 守住身体、交通与使用环境的安全底线
+  - 防护更加可靠，使用过程更安心
+  risks:
+  - 假冒、错误用途、错误佩戴或过度相信宣传
+  boundaries:
+  - 贵不自动等于合格，便宜也不自动不安全，关键是要求、适配与可靠来源
+  - 不因佩戴防护而忽视环境风险；有损伤史的防护不能仅凭外观判断安全
+  applicable_when:
+  - 骑行、作业、运动或用电场景需要必要防护
+  - 现有防护损坏、不适配或来源无法核查
+  not_applicable_when:
+  - 仅为更贵、更有身份的标签升级，现有防护仍合格适用
+  - 购买的防护与实际用途不符
+  recommendation: 先检查正在使用的一件必要防护是否合格、适配且状态可靠。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/16-安全与风险.md
+  anchor: guide-essential-protection
+  cost_changes:
+    reduced:
+    - 降低部分因缺少或错误使用防护导致的风险
+    - 减少故障或损伤后的补救负担
+    increased:
+    - 合格、适配的产品与必要更换可能增加支出
+    - 检查和正确使用需要时间与学习
+  quality_effects:
+    maintained:
+    - 守住身体、交通与使用环境的安全底线
+    improved:
+    - 防护更加可靠，使用过程更安心
+- id: guide-fewer-apps
+  name: 少 App 原则
+  category: digital
+  source_type: guoxue_practice
+  summary: 功能重复的软件，可以只留真正顺手的那几个。
+  status: accepted
+  cost_dimensions:
+  - time
+  - attention
+  - space
+  - maintenance
+  - decision
+  - safety_risk
+  quality_dimensions:
+  - convenience
+  - safety
+  - emotional_wellbeing
+  core_principles:
+  - P03
+  - P04
+  - P05
+  - P08
+  benefits:
+  - 保留必要功能、无障碍需要和资料可访问性
+  - 常用任务更容易完成，日常打扰更少
+  risks:
+  - 删除资料、漏取消订阅，或过度集中后无法访问重要功能
+  boundaries:
+  - 先确认资料和访问方式，再卸载
+  - 不为了少装一个 App 而使用来源不明、权限过大的替代品
+  applicable_when:
+  - 功能重复、很少使用的软件很多
+  - 账号与通知管理明显造成负担
+  not_applicable_when:
+  - 软件承担必要工作、照护、无障碍或应急功能
+  - 新工具无法可靠迁移资料或满足实际需要
+  recommendation: 从一种重复功能开始，先核验替代与资料，再做精简。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/17-数字生活.md
+  anchor: guide-fewer-apps
+  cost_changes:
+    reduced:
+    - 减少重复选择、通知与账号管理
+    - 减少不必要权限、存储占用与维护负担
+    increased:
+    - 合并工具需要迁移资料与适应操作
+    - 依赖少数工具时要留意服务中断和退出能力
+  quality_effects:
+    maintained:
+    - 保留必要功能、无障碍需要和资料可访问性
+    improved:
+    - 常用任务更容易完成，日常打扰更少
+- id: guide-subscription-audit
+  name: 定期盘点数字订阅
+  category: digital
+  source_type: guoxue_practice
+  summary: 让会员和云服务按真实需要续费，而不是靠遗忘。
+  status: accepted
+  cost_dimensions:
+  - money
+  - attention
+  - maintenance
+  - decision
+  - opportunity
+  quality_dimensions:
+  - convenience
+  - safety
+  - stability
+  - sustainability
+  core_principles:
+  - P03
+  - P04
+  - P05
+  - P06
+  - P08
+  benefits:
+  - 保持重要功能、数据和账号的可访问性
+  - 订阅预算更清楚，续费更加主动
+  risks:
+  - 取消后容量不足、资料被删、账号或工作功能中断
+  - 只卸载 App 或删除支付方式，以为已经取消
+  boundaries:
+  - 以服务实际取消、降级和保留规则为准，不假定资料会永久保留
+  - 先迁移并验证再取消，必要时保留过渡费用
+  applicable_when:
+  - 自动扣款项目多或用途不清
+  - 多个服务功能重叠，需要重新分配预算
+  not_applicable_when:
+  - 资料尚未迁移核验，取消将影响访问或删除数据
+  - 订阅仍是工作、照护或重要备份的必要工具
+  recommendation: 检查一项不用的续费，涉及资料时完成迁移核验再取消。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/17-数字生活.md
+  anchor: guide-subscription-audit
+  cost_changes:
+    reduced:
+    - 减少不用的续费和重复订阅
+    - 减少分散管理与忘记扣款的负担
+    increased:
+    - 盘点和迁移资料需要时间
+    - 替代服务可能需要付费或改变使用方式
+  quality_effects:
+    maintained:
+    - 保持重要功能、数据和账号的可访问性
+    improved:
+    - 订阅预算更清楚，续费更加主动
+- id: guide-data-backup
+  name: 数据备份
+  category: digital
+  source_type: guoxue_practice
+  summary: 重要资料需要一份真的能找回来的副本。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - maintenance
+  - safety_risk
+  quality_dimensions:
+  - safety
+  - stability
+  - convenience
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P06
+  - P08
+  benefits:
+  - 保留重要资料的完整性与访问能力
+  - 设备或账号出问题时，更容易恢复重要内容
+  risks:
+  - 同步误删也同步到副本、密码遗失、备份损坏或隐私泄露
+  boundaries:
+  - 同步不自动等于备份，要确认是否保留可恢复的历史或独立副本
+  - 备份不能保证零损失；删除原件、清空设备或取消云服务前，先核验完整性与恢复能力
+  applicable_when:
+  - 资料重要、无法轻易重新获得
+  - 资料集中在一个设备、账号或存储位置
+  not_applicable_when:
+  - 备份位置仍依赖同一故障点，或自己无法可靠访问
+  - 把敏感资料上传到不可信服务
+  recommendation: 今天先给一份不可替代的资料做独立副本，并实际试着恢复。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/17-数字生活.md
+  anchor: guide-data-backup
+  cost_changes:
+    reduced:
+    - 降低部分因单点故障导致的资料损失风险
+    - 减少丢失后重建、恢复与焦急补救的负担
+    increased:
+    - 独立存储、云服务或设备可能需要费用
+    - 检查访问、更新副本和测试恢复需要时间
+  quality_effects:
+    maintained:
+    - 保留重要资料的完整性与访问能力
+    improved:
+    - 设备或账号出问题时，更容易恢复重要内容
+- id: guide-exit-cost
+  name: 退出成本原则
+  category: lifecycle
+  source_type: guoxue_practice
+  summary: 购买前就想清楚，不再需要时怎样安全、合理地退出。
+  status: accepted
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - space
+  - maintenance
+  - safety_risk
+  quality_dimensions:
+  - convenience
+  - safety
+  - stability
+  - sustainability
+  core_principles:
+  - P01
+  - P03
+  - P04
+  - P06
+  - P08
+  benefits:
+  - 守住资料、财产和合规处理的安全
+  - 需求变化、故障或搬家时更容易调整
+  risks:
+  - 转售价不及预期、搬运与处理费用增加
+  - 资料泄露或危险物品被错误转赠和处理
+  boundaries:
+  - 转售收益是估算，不保证成交；总账采用购入减实际转售收入时，不再重复加算同一转售损失
+  - 电池、电器、药品等按当地适用规定处理，不自行拆解危险部件
+  applicable_when:
+  - 购买大型物品、电子设备或带持续服务的产品
+  - 可能搬家、需求变化或维修困难
+  not_applicable_when:
+  - 因期待高价转卖而购买原本不需要的东西
+  - 退出方案依赖未经核实的渠道或保证
+  recommendation: 下次购买前先回答退出问题，再把它放进总成本比较。
+  review_status: editorial_reviewed
+  doc_path: docs/行为指南/18-物品生命周期.md
+  anchor: guide-exit-cost
+  cost_changes:
+    reduced:
+    - 提前识别搬运、处理、锁定服务和资料迁移负担
+    - 减少不再使用的物品持续占用空间
+    increased:
+    - 购买前查询维修、退订与回收条件需要时间
+    - 更容易退出的方案可能购入价格更高
+  quality_effects:
+    maintained:
+    - 守住资料、财产和合规处理的安全
+    improved:
+    - 需求变化、故障或搬家时更容易调整

@@ -1,17 +1,18 @@
-name: 新理论投稿
-description: 发现一个过日子方法？一起来算算值不值。不需要懂代码。
-title: '[新理论] '
+name: 新方法投稿
+description: 网络理论或日常方法都欢迎。一起来看成本、品质和边界。
+title: '[新方法] '
 body:
   - type: markdown
     attributes:
       value: |
         生活成本可以低，生活品质不能低。
-        先说清方法和问题，再一起讨论值不值。来源不清可以写“准确出处待补充”，不要编造。
+        成本不只是钱，品质是每天真实的生活体验。
+        先说清方法和问题，再一起讨论值不值。出处没找到就写“待补充”，不用编故事，也不需要懂代码。
   - type: input
     id: theory-name
     attributes:
-      label: 理论名称
-      description: 这个理论或生活方法通常叫什么？
+      label: 理论或方法名称
+      description: 这个理论或生活方法通常叫什么？已有文章也可以补充新场景。
       placeholder: 例如：一种低频工具租赁方法
     validations:
       required: true
@@ -26,14 +27,29 @@ body:
     id: problem
     attributes:
       label: 它解决什么问题
-      description: 谁会用它？原本在钱、时间、精力或注意力上遇到什么问题？
+      description: 谁会用它？在什么场景遇到什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: costs
+    attributes:
+      label: 它减少了什么成本，又增加了什么成本
+      description: 钱、时间、精力、注意力、空间、维护、决策、情绪、机会和长期风险，都可以考虑。只写相关项，不知道就说明。
+      placeholder: 例如：租工具少了购买和收纳成本，但取还耗时，需要核对押金和赔偿。
+    validations:
+      required: true
+  - type: textarea
+    id: quality
+    attributes:
+      label: 它保住或改善了什么生活品质
+      description: 比如健康、睡眠、营养、舒适、安全、便利、自己的时间、重要关系、真实体验和稳定生活。有什么损失也请说明。
     validations:
       required: true
   - type: textarea
     id: compatibility
     attributes:
       label: 为什么你觉得符合“过学”
-      description: 它保住或改善了什么生活品质，又砍掉了什么无效成本？
+      description: 它为什么对你或某些人值得？适用条件是什么？便宜不能抵消明显健康、安全风险。
     validations:
       required: true
   - type: textarea
@@ -47,6 +63,6 @@ body:
     id: sources
     attributes:
       label: 相关来源
-      description: 尽量提供原帖、文章或视频链接。分清原始主张和转述；没有可靠出处就写“准确出处待补充”。请勿上传隐私或整篇搬运他人作品。
+      description: 有作者、原帖、文章或视频链接就附上，分清原话和转述。出处没找到就写“待补充”；自己的实践请说明是个人经验。请勿上传隐私或整篇搬运他人作品。
     validations:
       required: true

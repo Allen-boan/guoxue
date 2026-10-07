@@ -1,8 +1,8 @@
-schema_version: '1.0'
-version: 0.3.0
+schema_version: '1.1'
+version: 0.4.0
 language: zh-CN
 updated_at: '2026-10-07'
-constitution_version: 0.1.0
+constitution_version: 0.2.0
 status_definitions:
   core: 核心纲领或基本原则；变更必须人工审核。
   accepted: 正式收录；已完成所需人工复核与来源核查。
@@ -27,7 +27,7 @@ theories:
   status: observation
   compatibility: uncertain
   analysis_scope: editorial_practice_only_not_original_claim
-  source_type: creator_account
+  source_type: internet_theory
   creator:
     name: 长安二球（大水教父）
     handle: '@TangSMer'
@@ -63,6 +63,42 @@ theories:
   page: docs/04-过日子的具体方法/01-大水理论.md
   parent_id: null
   child_ids: []
+  source_evidence_type: creator_account
+  doc_path: docs/04-过日子的具体方法/01-大水理论.md
+  cost_dimensions:
+  - money
+  - time
+  - attention
+  - maintenance
+  - decision
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - health
+  - nutrition
+  - safety
+  - convenience
+  - sustainability
+  cost_changes:
+    reduced:
+    - 可能减少不需要的饮料支出、购买时间与选择负担。
+    - 容器简单、好清洗时，可减少维护和操心。
+    increased:
+    - 带水、清洗和补水仍要花时间。
+    - 复杂设备会增加买价、耗材、维护和关注负担。
+  quality_effects:
+    maintained:
+    - 保住饮水安全、基本营养和日常便利；不能用水替代吃饭。
+    improved:
+    - 把饮水安排得更顺手，可能更容易维持。
+    - 若替代了原本频繁喝的高糖饮料，可能有益于健康；不等于喝水越多越好。
+  applicable_when:
+  - 日常饮水不便，因补水麻烦反复购买不需要的饮料。
+  - 有安全水源和适合场景、容易清洗的容器。
+  not_applicable_when:
+  - 有医嘱限制液体摄入或特殊健康情况，不能套用普通日常做法。
+  - 水源无法确认安全，或需要通过短时间大量饮水完成挑战。
+  - 高温劳动等特殊场景，需要按实际风险另作安排。
 - id: sleep
   name: 长睡眠理论
   aliases:
@@ -72,7 +108,7 @@ theories:
   status: observation
   compatibility: uncertain
   analysis_scope: editorial_practice_only_not_original_claim
-  source_type: internet_term_unverified
+  source_type: internet_theory
   sources: []
   source_note: 作者与原始来源待补充。
   core_principles:
@@ -100,6 +136,42 @@ theories:
   page: docs/04-过日子的具体方法/02-长睡眠理论.md
   parent_id: null
   child_ids: []
+  source_evidence_type: internet_term_unverified
+  doc_path: docs/04-过日子的具体方法/02-长睡眠理论.md
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - maintenance
+  - emotion
+  - health_risk
+  quality_dimensions:
+  - health
+  - sleep
+  - time_autonomy
+  - emotional_wellbeing
+  - sustainability
+  cost_changes:
+    reduced:
+    - 可能减少无效熬夜占用的时间、注意力和精力。
+    - 不以睡得少展示努力，减少人设与睡眠焦虑带来的负担。
+    increased:
+    - 需要为休息留出时间并协调工作、家庭和个人安排。
+    - 必要的遮光、降噪或床具可能需要合理预算；过度购买助眠设备反而增加维护。
+  quality_effects:
+    maintained:
+    - 保障符合个人情况的睡眠机会和健康边界，保留必要责任与重要关系。
+    improved:
+    - 合理休息改善后，恢复感、白天精力和情绪可能改善，需观察个人实际变化。
+    - 减少可避免的无效熬夜，可能使生活安排更可持续。
+  applicable_when:
+  - 睡眠经常被可避免的刷手机、装忙或无效安排挤占。
+  - 能从作息或环境中找到一个可改变的环节。
+  not_applicable_when:
+  - 持续失眠、明显嗜睡、呼吸异常或睡很久仍疲惫，需要专业评估。
+  - 轮班、育儿或照护让固定作息不可行，需先协调支持与现实安排。
+  - 已有诊疗安排，不能自行以网上主张替代。
 - id: lean-muscle
   name: 薄肌理论
   aliases:
@@ -108,7 +180,7 @@ theories:
   summary: 邵艾伦 Alan 通过薄肌训练讨论从身体入手获得正反馈与掌控感；“过学”评估其中真实收益、投入与健康边界，不将体型设为统一标准。
   status: conditional
   compatibility: partly_compatible
-  source_type: original_creator_video
+  source_type: internet_theory
   sources:
   - title: 为什么我劝所有男人练薄肌？
     author: 邵艾伦 Alan
@@ -154,6 +226,43 @@ theories:
   page: docs/04-过日子的具体方法/03-薄肌理论.md
   parent_id: null
   child_ids: []
+  source_evidence_type: original_creator_video
+  doc_path: docs/04-过日子的具体方法/03-薄肌理论.md
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - maintenance
+  - emotion
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - health
+  - nutrition
+  - safety
+  - emotional_wellbeing
+  - experience
+  - sustainability
+  cost_changes:
+    reduced:
+    - 可减少无关装备、过度记录和身材比较的维护、注意力与情绪负担。
+    increased:
+    - 运动需要时间和精力，合适的场地、装备或指导可能需要金钱。
+    - 不合适的训练、营养不足或带伤硬练会增加健康与安全风险，不能以收益抵消。
+  quality_effects:
+    maintained:
+    - 保住基本营养、恢复和训练安全，尊重身体差异。
+    improved:
+    - 适合个人情况的运动可能改善日常活动能力、个人体验与情绪。
+    - 按兴趣和现实时间安排运动，可能更容易长期维持。
+  applicable_when:
+  - 有改善身体活动能力或个人运动体验的真实需求。
+  - 能以适合自身情况的方式开始，投入与恢复可持续。
+  not_applicable_when:
+  - 伤病、特殊健康状况或恢复期，需要先结合专业建议调整。
+  - 为了统一体型进行极端减脂、饥饿或带伤训练。
+  - 竞技、康复等专项需求，不能套用泛用生活安排。
 - id: secondhand
   name: 二手消费
   aliases:
@@ -164,7 +273,7 @@ theories:
   summary: 在能核查功能、卫生和安全的品类中购买二手，用较少成本取得需要的使用价值。
   status: conditional
   compatibility: partly_compatible
-  source_type: internet_term_unverified
+  source_type: internet_theory
   sources: []
   source_note: 具体理论作者与原始来源待补充。
   core_principles:
@@ -193,6 +302,45 @@ theories:
   page: docs/04-过日子的具体方法/04-二手消费.md
   parent_id: null
   child_ids: []
+  source_evidence_type: internet_term_unverified
+  doc_path: docs/04-过日子的具体方法/04-二手消费.md
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - space
+  - maintenance
+  - decision
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - health
+  - safety
+  - convenience
+  - stability
+  - sustainability
+  cost_changes:
+    reduced:
+    - 合用时减少购买支出和不影响功能的新货溢价。
+    - 处理已有闲置可能减少空间和收纳负担。
+    increased:
+    - 找货、沟通、判断与验货占用时间、精力和注意力。
+    - 运费、清洁、维修与售后缺口可能提高总成本。
+    - 状态无法核验时，会增加卫生、安全与交易风险。
+  quality_effects:
+    maintained:
+    - 保住所需功能、使用便利、卫生与安全，确认保障条件。
+    improved:
+    - 在状态可靠、总成本合适的前提下，可能让真实需求更容易负担和持续。
+  applicable_when:
+  - 确有需要，物品功能、状态和重要历史能够核验。
+  - 加入运费、清洁、维修与验货时间后，仍有合理优势。
+  - 交易方式和售后边界清楚，自己能承担剩余风险。
+  not_applicable_when:
+  - 保护生命的用品存在无法核实的事故或损伤历史。
+  - 卫生、关键性能或来源无法验证。
+  - 没有验货能力和时间，或因低价囤积不需要的东西。
 - id: renting
   name: 租万物
   aliases:
@@ -202,7 +350,7 @@ theories:
   summary: 按实际需要和期限获得使用权，覆盖租房、工具、出行与活动用品、短期设备和阶段性家具；比较品质、总成本与维护负担，不一概主张租比买好。
   status: conditional
   compatibility: partly_compatible
-  source_type: internet_term_unverified
+  source_type: internet_theory
   sources: []
   source_note: 作者与原始来源待补充。
   core_principles:
@@ -238,6 +386,50 @@ theories:
   parent_id: null
   child_ids:
   - housing
+  source_evidence_type: internet_term_unverified
+  doc_path: docs/04-过日子的具体方法/05-租万物.md
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - attention
+  - space
+  - maintenance
+  - decision
+  - opportunity
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - sleep
+  - comfort
+  - safety
+  - convenience
+  - time_autonomy
+  - experience
+  - stability
+  - sustainability
+  cost_changes:
+    reduced:
+    - 适合时减少前期支出、闲置空间、维护与退出负担。
+    - 减少资金压在用不到的物品上，为更重要的需要保留资源。
+    increased:
+    - 累计租金、配送、清洁、续租与服务费可能超过购买方案。
+    - 取还、交接和合同管理消耗时间与精力，押金占用现金。
+    - 费用或责任不透明、卫生和安全不清楚，会增加使用风险。
+  quality_effects:
+    maintained:
+    - 保住所需功能、便利、安全与稳定性；住房保住基本居住质量和睡眠。
+    improved:
+    - 阶段性需求中，合适的租用可能提升调整余地和使用便利。
+    - 按真实需要选择期限和方式，可能让生活安排更可持续。
+  applicable_when:
+  - 需要期限、功能与稳定程度明确，租用能可靠满足需求。
+  - 完整费用、押金、交付、维修与退出责任透明且可负担。
+  - 租房能够满足长期或阶段性居住需求，安全和基本品质有保障。
+  not_applicable_when:
+  - 累计租金与取还负担明显超过合适的购买或借用方案。
+  - 费用、赔偿、出租权限、卫生或安全状态无法确认。
+  - 合同责任无法负担，或把租赁当成无风险分期。
 - id: housing
   name: 租房
   aliases:
@@ -248,7 +440,7 @@ theories:
   summary: 租万物中的居住子项：在安全和基本居住质量不退步的前提下，比较租金、通勤、能耗和搬迁等住房总成本。
   status: conditional
   compatibility: partly_compatible
-  source_type: internet_term_unverified
+  source_type: internet_theory
   sources: []
   source_note: 作者与原始来源待补充。
   core_principles:
@@ -276,4 +468,53 @@ theories:
   page: docs/04-过日子的具体方法/租万物/01-租房.md
   parent_id: renting
   child_ids: []
+  source_evidence_type: internet_term_unverified
+  doc_path: docs/04-过日子的具体方法/租万物/01-租房.md
+  cost_dimensions:
+  - money
+  - time
+  - energy
+  - space
+  - maintenance
+  - emotion
+  - opportunity
+  - health_risk
+  - safety_risk
+  quality_dimensions:
+  - health
+  - sleep
+  - comfort
+  - safety
+  - convenience
+  - time_autonomy
+  - relationships
+  - stability
+  - sustainability
+  cost_changes:
+    reduced:
+    - 减少不需要的面积、地址与装修溢价，降低无效固定支出。
+    - 合用的空间安排可能减少无用面积与后续维护负担。
+    increased:
+    - 更远的房源可能增加通勤、交通费用、疲劳与睡眠损失。
+    - 押金占用、搬家、维修和不稳定租期增加现金、时间与情绪负担。
+    - 明显消防、用电、燃气或基本居住隐患不能用低租金抵消。
+  quality_effects:
+    maintained:
+    - 保住安全、基本居住舒适、合理睡眠、照护与重要关系。
+    improved:
+    - 合适的位置和房型可能改善通勤便利、时间自主与生活稳定性。
+    - 减少无用溢价且保住品质时，可能降低长期住房负担。
+  applicable_when:
+  - 房源安全、出租权限和基本居住条件能够核查。
+  - 总费用、通勤与家庭安排相容，租期和退出条件可接受。
+  - 减少的是自己用不到的卖点，而非核心居住需要。
+  not_applicable_when:
+  - 存在明显安全隐患、违法隔断或不能保障基本居住权益。
+  - 低租金依赖长期睡不好、过度拥挤或无法承受的通勤。
+  - 房型与无障碍、照护、居家工作或稳定性需求冲突。
 hierarchy_note: parent_id 为 null 的条目是主项；子项按 parent_id 归入所属主项，不与主项并列计数。主项收录不自动代表所有子场景适用。
+source_type_definitions:
+  internet_theory: 已有网络理论或网络实践；该分类不表示原始来源已找到或主张已通过审核。
+  guoxue_practice: “过学”按总纲整理的实践方法；不声称本项目在互联网上首次提出这些做法。
+dimension_note: cost_dimensions 与 quality_dimensions 只标记相关维度，不代表所有成本都下降或所有品质都提高。成本增减与品质变化见 cost_changes、quality_effects、risks
+  和 boundaries；不同成本不直接相加，健康与安全底线不作价格交换。
