@@ -12,11 +12,11 @@ description: 给维护者看的本地运行、内容修改与 GitHub Pages 部�
 需要 Node.js 22 或以上。首次安装：
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-首次安装成功后，将生成的 `package-lock.json` 提交进仓库；之后使用 `npm ci` 保持依赖一致。终端会显示本地访问地址。站点默认部署在 `/guoxue/`，本地访问也包含这个前缀。
+仓库已包含实际构建生成的 `package-lock.json`，使用 `npm ci` 安装已锁定的依赖。终端会显示本地访问地址。站点默认部署在 `/guoxue/`，本地访问也包含这个前缀。
 
 ```bash
 npm run check
@@ -48,13 +48,13 @@ npm run preview
 
 1. 打开 [GitHub 新建仓库](https://github.com/new?name=guoxue)，在 `Allen-boan` 下创建公开仓库 `guoxue`，勾选 **Add a README file**。本项目的默认部署分支为 `main`；若实际分支名称不同，先对齐工作流和编辑链接。
 2. 进入仓库 **Settings → Pages → Build and deployment → Source**，选择 **GitHub Actions**。项目已有工作流，无需另建模板。
-3. 推送本项目，包括 `.github/workflows/pages.yml`，以及首次成功安装后生成的 `package-lock.json`。如果尚无锁文件，工作流首次使用 `npm install`；有锁文件时使用 `npm ci`。
+3. 推送本项目，包括 `.github/workflows/pages.yml` 和已提交的 `package-lock.json`。工作流使用 `npm ci`；若另建项目时尚无锁文件，首次回退为 `npm install`。
 4. 首次可以在 **Actions → 发布过学官网 → Run workflow** 手动运行。之后推送到 `main` 会自动发布。
 5. 等构建、部署和「验收已发布页面与资源」都成功，再访问 `https://allen-boan.github.io/guoxue/`。验收会检查 18 个公开页面以及首页的样式、脚本资源。
 
 工作流使用最小权限：构建只读仓库；发布阶段读取验收脚本，并需要 `pages: write` 与 `id-token: write`。PR 只做构建，不触发发布。
 
-首次构建生成的锁文件会保存到 Actions 的 `dependency-lock` 构建产物中。将其中的 `package-lock.json` 提交到源码仓库后，后续构建自动使用 `npm ci`。
+本项目首次构建生成的锁文件已提交到源码仓库，后续构建自动使用 `npm ci`。每次构建也会将锁文件保存到 Actions 的 `dependency-lock` 构建产物，便于核对实际使用的依赖。
 
 ### 由本会话协助上传时
 

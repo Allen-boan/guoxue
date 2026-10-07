@@ -25,7 +25,7 @@
 | 新理论能不能收入门派 | [《过学新论》](docs/new/index.md) |
 | 总部最近收录了什么 | [总部最新决议](docs/decisions/index.md) |
 
-官网地址以 GitHub Pages 首次部署成功为准；部署未完成时，也可以直接点上面的文章阅读。
+官网已上线：[去过学精神总部逛逛](https://allen-boan.github.io/guoxue/)。也可以直接点上面的文章阅读。
 
 ## 过学是什么
 
@@ -93,11 +93,11 @@
 本地使用 Node.js 22 或更高版本：
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-首次安装成功后应提交生成的 `package-lock.json`，之后使用 `npm ci` 保持依赖一致。打开终端显示的本地网址。静态构建与预览：
+仓库已包含实际构建生成的 `package-lock.json`，使用 `npm ci` 保持依赖一致。打开终端显示的本地网址。静态构建与预览：
 
 ```bash
 npm run build
