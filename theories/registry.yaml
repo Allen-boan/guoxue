@@ -1,0 +1,188 @@
+schema_version: '1.0'
+version: '0.1.0'
+language: zh-CN
+updated_at: '2026-10-07'
+constitution_version: '0.1.0'
+status_definitions:
+  core: 核心纲领或基本原则；变更必须人工审核。
+  accepted: 正式收录；已完成所需人工复核与来源核查。
+  conditional: 有条件收录；仅在列明的边界和实践解释下纳入，条件与待核事项必须公开。
+  observation: 观察中；证据、定义或适用性不足，尚未推荐收录。
+  rejected: 不予收录；已记录冲突原则、风险或其他拒绝理由。
+  archived: 归档；保留历史，不再作为当前推荐。
+compatibility_definitions:
+  compatible: 符合
+  partly_compatible: 部分符合
+  incompatible: 不符合
+  uncertain: 继续观察
+status_note: 收录状态不等于相容性结论，也不等于来源已经核验。相容性必须针对明确主张和适用条件判断。
+initial_review_note: 六项均为初版编辑整理，待发起人人工复核。其中四项有条件收录，大水与长睡眠因原始主张尚未查实而观察中；过学自己的实践分析不替代作者原话，也不代表认可同名说法的全部版本。
+theories:
+  - id: water
+    name: 大水理论
+    aliases: [大水]
+    category: 身体与日常
+    summary: 已找到关于大瓶或桶装水的网络转述，但原作者与完整主张尚未查实；页面另列过学对安全、方便饮水的分析。
+    status: observation
+    compatibility: uncertain
+    analysis_scope: editorial_practice_only_not_original_claim
+    source_type: secondary_repost_original_unverified
+    sources:
+      - title: 微博转述：看到一个博主提出了#大水理论#
+        author: 江湖李傅相
+        platform: weibo
+        url: https://weibo.com/2/detail/5350653043935894
+        evidence_type: secondary
+        verified_scope: 原帖明确是转述未具名博主，含“论健康，大水大于一切；论实惠，大水大于一切。”；只能核实转述存在，不能确认提出者或健康主张。
+      - title: 抖音观众反馈：听完 Alan 直播后改喝大水
+        author: 黛茜茜（索引显示的发布账号）
+        platform: douyin
+        url: https://www.douyin.com/video/7693514523080861760
+        evidence_type: secondary
+        verified_scope: 搜索索引中的标题将大水与 Alan 直播相连，并含邵艾伦与薄肌标签；完整视频及直播原话未核验，不能认定首创者。
+      - title: 抖音媒体视频：大水时代与饮水实用性
+        author: 未核实
+        platform: douyin
+        url: https://www.douyin.com/video/7693349020558707987
+        evidence_type: secondary
+        verified_scope: 搜索索引中的媒体标题与平台链接；视频正文、发布账号及报道引用的提出者未能读取。
+    source_note: 准确出处待补充；已查到二手转述，江湖李傅相是此微博的发布者，不据此认定为理论提出者。本轮未查实原作者，不代表没有明确出处。
+    core_principles: [P01, P03, P04, P07, P08]
+    benefits: [让日常饮水更方便, 减少不必要的饮品溢价, 把注意力放回基本需要]
+    risks: [强迫大量饮水可能危害健康, 不同身体情况的饮水需求不同, 不应声称排毒或治疗疾病]
+    boundaries:
+      - 不设人人通用的饮水量，不以大量为正确标准。
+      - 有相关疾病、特殊身体情况或医嘱时遵循专业建议。
+      - 选择符合安全要求的饮用水，不削减必要营养。
+    recommendation: 继续核查原作者与完整主张，暂不对同名理论作收录推荐；安全、方便饮水是页面另行讨论的实践分析。
+    review_status: initial_editorial
+    review_note: 观察中；已补国内抖音传播线索，原始主张与提出者仍未查实，原则关联与实践分析均不能代替原说法评审。
+    page: docs/practice/water.md
+  - id: sleep
+    name: 长睡眠理论
+    aliases: [长睡眠]
+    category: 身体与日常
+    summary: 原作者、具体时长主张与完整论证尚未查实；页面先列过学对合理睡眠的分析，不替原说法定义。
+    status: observation
+    compatibility: uncertain
+    analysis_scope: editorial_practice_only_not_original_claim
+    source_type: internet_term_unverified
+    sources: []
+    source_note: 准确出处待补充；本轮未查实提出者与原始内容，不代表没有明确出处。页面的合理睡眠建议是过学自己的实践分析，不能当作原理论的定义。
+    core_principles: [P01, P03, P05, P06, P08, P09]
+    benefits: [减少无效熬夜, 将资源投入基本休息, 降低装忙带来的消耗]
+    risks: [一味延长时长不能解决所有睡眠问题, 异常嗜睡或持续失眠需要评估, 个人与家庭情况不同]
+    boundaries:
+      - 不给所有人规定统一时长，不承诺治疗效果。
+      - 持续睡眠异常、白天明显嗜睡等情况应寻求专业评估。
+      - 不以睡眠主张逃避必要照护或合理责任。
+    recommendation: 继续核查提出者、原话与具体主张，暂不建议正式收录；合理睡眠的生活分析与原说法评审分别进行。
+    review_status: initial_editorial
+    review_note: 观察中；原始主张尚未查实，不能把过学对合理睡眠的分析当作已完成的理论评审。
+    page: docs/practice/sleep.md
+  - id: lean-muscle
+    name: 薄肌理论
+    aliases: [薄肌]
+    category: 身体与日常
+    summary: 邵艾伦 Alan 通过薄肌训练讨论从身体入手获得正反馈与掌控感；过学评估其中真实收益、投入与健康边界，不将体型设为统一标准。
+    status: conditional
+    compatibility: partly_compatible
+    source_type: original_creator_video
+    sources:
+      - title: 为什么我劝所有男人练薄肌？
+        author: 邵艾伦 Alan
+        platform: bilibili
+        url: https://www.bilibili.com/video/BV1xa4k6vEpp/
+        verification_url: https://www.bilibili.com/list/4029133/?bvid=BV1xa4k6vEpp&oid=117177126489261
+        published_at: '2026-08-29'
+        evidence_type: primary
+        verified_scope: 本人账号、视频标题与平台页面发布日期。
+      - title: 为什么我劝所有男人练薄肌？
+        author: 邵艾伦 Alan
+        platform: douyin
+        url: https://www.douyin.com/video/7679732756041043206
+        published_at: '2026-08-30'
+        evidence_type: primary
+        verified_scope: 本人发布页面简介将身体训练与人生主动权、正反馈相连；完整字幕未逐句核验。
+      - title: 如何练出薄肌？训练、饮食、减脂一次讲透
+        author: 邵艾伦 Alan
+        platform: bilibili
+        url: https://www.bilibili.com/video/BV1httT6LEfy/
+        published_at: '2026-09-01'
+        evidence_type: primary
+        verified_scope: 本人后续训练、饮食与减脂教程的标题及发布日期，不等于其中全部效果主张已获核实。
+    source_note: 已定位邵艾伦 Alan 本人原视频与后续教程；不同平台发布日期不同，不据此声称全网首次提出。完整视频论证和具体效果仍需逐项核查。
+    core_principles: [P01, P04, P07, P08, P09, P10]
+    benefits: [关注实际体能需要, 选择能坚持的运动方式, 减少不必要的体型展示压力]
+    risks: [名称可能强化单一体型审美, 极端减脂或过度训练可能伤害健康, 不同身体基础需要不同方案]
+    boundaries:
+      - 不设统一体脂、体重或训练强度，不鼓励饥饿减脂。
+      - 保留基本营养和必要恢复，不能用疼痛或损伤证明效果。
+      - 有疾病、伤痛或特殊身体情况时先寻求专业建议。
+    recommendation: 从原视频理解通过训练获得反馈的思路，按个人情况核查实际收益、维护投入与健康边界，不把过学自己的解释当作作者原定义。
+    review_status: initial_editorial
+    review_note: 已补本人原视频与教程；过学收录评审仍待人工复核，不等于原视频全部论证已获事实核验。
+    page: docs/practice/lean-muscle.md
+  - id: housing
+    name: 低成本租房
+    aliases: [低租金居住, 低成本居住]
+    category: 居住
+    summary: 在安全和基本居住质量不退步的前提下，比较租金、通勤、能耗和搬迁等总成本。
+    status: conditional
+    compatibility: partly_compatible
+    source_type: internet_term_unverified
+    sources: []
+    source_note: 准确出处待补充；本文讨论一般生活方法，不指定任何博主或网络版本为源头。
+    core_principles: [P01, P02, P03, P06, P08, P10]
+    benefits: [减少位置或装修展示溢价, 把住房选择放到总成本中比较, 为其他核心需要保留资源]
+    risks: [消防和房屋安全风险, 潮湿噪声与通勤负担, 合同押金和提前退租风险]
+    boundaries:
+      - 不住有明显安全隐患或缺乏基本居住条件的房屋。
+      - 实地核查房屋、出租资格、合同、押金和费用，不只看照片和月租。
+      - 不能将健康和长期疲劳当作被省略的成本。
+    recommendation: 用总账比较可行房源，安全和基本居住质量先通过。
+    review_status: initial_editorial
+    review_note: 初版整理，待发起人人工复核；未确认原始出处。
+    page: docs/practice/housing.md
+  - id: secondhand
+    name: 二手 / 咸鱼买东西
+    aliases: [二手消费, 咸鱼买东西, 闲鱼买东西]
+    category: 消费与使用
+    summary: 在能核查功能、卫生和安全的品类中购买二手，用较少成本取得需要的使用价值。
+    status: conditional
+    compatibility: partly_compatible
+    source_type: internet_term_unverified
+    sources: []
+    source_note: 准确出处待补充；闲鱼是平台名称，本项目不与平台存在官方关系，也不保证任何交易。
+    core_principles: [P02, P03, P06, P07, P08, P10]
+    benefits: [减少新旧价差中的非功能成本, 让已有物品继续使用, 可按实际需求选择低成本替代]
+    risks: [诈骗与隐瞒故障, 卫生与安全无法核验, 维修运费和售后成本, 因便宜囤积无用物品]
+    boundaries:
+      - 对涉及人身安全、卫生或无法验证关键性能的物品保持谨慎。
+      - 核对功能、状态、交易记录和售后条件，不因便宜跳过必要检查。
+      - 使用有保护机制的交易方式，保护隐私和个人信息。
+    recommendation: 从容易验货、风险可控、确有需要的物品开始，算清维修运费和维护成本。
+    review_status: initial_editorial
+    review_note: 初版整理，待发起人人工复核；未确认原始出处。
+    page: docs/practice/secondhand.md
+  - id: renting
+    name: 租万物
+    aliases: [租赁消费, 使用而不拥有]
+    category: 消费与使用
+    summary: 对低频、短期需求考虑租赁，比较总租金、押金、赔偿、归还和购买维护成本。
+    status: conditional
+    compatibility: partly_compatible
+    source_type: internet_term_unverified
+    sources: []
+    source_note: 准确出处待补充；租万物是讨论性名称，不意味着任何物品都适合租赁。
+    core_principles: [P03, P04, P05, P06, P07, P08]
+    benefits: [满足短期或低频需求, 减少闲置和储存负担, 避免为一次使用长期持有]
+    risks: [累计租金超过购买成本, 押金与高额赔偿责任, 自动续费或租转购条款, 卫生和关键性能无法核验]
+    boundaries:
+      - 签约前看清总费用、押金、续费、赔偿和退出条件。
+      - 不承担明显无法负担的合同责任，不把租赁当作无风险分期。
+      - 安全与卫生要求不能因为租来使用而降低。
+    recommendation: 优先评估低频短期场景；高频长期使用要重新比较购买与租赁总成本。
+    review_status: initial_editorial
+    review_note: 初版整理，待发起人人工复核；未确认原始出处。
+    page: docs/practice/renting.md

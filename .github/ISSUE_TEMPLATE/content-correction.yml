@@ -1,0 +1,42 @@
+name: 内容纠错
+description: 哪句话不准确、哪里有风险，或者链接坏了？欢迎指出。
+title: '[纠错] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎具体指出问题，不需要先替我们写好答案。
+        涉及健康、安全的明显风险，请在标题里点明；请勿提供个人医疗信息或他人隐私。
+  - type: input
+    id: page
+    attributes:
+      label: 哪个页面
+      description: 提供网页链接、文章名或文件路径。
+    validations:
+      required: true
+  - type: textarea
+    id: passage
+    attributes:
+      label: 哪句话或哪一段
+      description: 引用必要的短句，或指出章节位置。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题是什么
+      description: 是事实不准、出处不清、边界遗漏、健康安全风险，还是页面显示问题？
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 相关依据
+      description: 有可靠链接请附上；暂时没有也可以说明。不编造研究、数字或作者。
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议怎么改
+      description: 可选。写一个方向就行，不需要会 Markdown。

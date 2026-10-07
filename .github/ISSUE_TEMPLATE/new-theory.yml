@@ -1,0 +1,52 @@
+name: 新理论投稿
+description: 发现一个过日子方法？来让总部研究一下。不需要懂代码。
+title: '[新理论] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        生活成本可以低，生活品质不能低。
+        先说清方法和问题，再一起讨论值不值。来源不清可以写“准确出处待补充”，不要编造。
+  - type: input
+    id: theory-name
+    attributes:
+      label: 理论名称
+      description: 这个理论或生活方法通常叫什么？
+      placeholder: 例如：一种低频工具租赁方法
+    validations:
+      required: true
+  - type: textarea
+    id: one-line
+    attributes:
+      label: 一句话介绍
+      description: 用自己的话说明它主张什么，不需要口号。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 它解决什么问题
+      description: 谁会用它？原本在钱、时间、精力或注意力上遇到什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: 为什么你觉得符合过学
+      description: 它保住或改善了什么生活品质，又砍掉了什么无效成本？
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: 可能存在什么问题
+      description: 有哪些不适用的人、长期代价，或健康安全风险？暂时不清楚也请说明。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 相关来源
+      description: 尽量提供原帖、文章或视频链接。分清原始主张和转述；没有可靠出处就写“准确出处待补充”。请勿上传隐私或整篇搬运他人作品。
+    validations:
+      required: true

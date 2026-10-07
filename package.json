@@ -1,0 +1,19 @@
+{
+  "name": "guoxue",
+  "version": "0.1.0",
+  "private": true,
+  "description": "过学｜过的人 · 全民大过日子时代",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --host 0.0.0.0",
+    "build": "npm run check && vitepress build docs",
+    "preview": "vitepress preview docs --host 0.0.0.0",
+    "check": "node scripts/check-content.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": {
+    "vitepress": "1.6.4",
+    "vue": "3.5.13",
+    "yaml": "2.7.0"
+  }
+}
