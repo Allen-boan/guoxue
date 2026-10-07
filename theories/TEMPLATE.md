@@ -40,7 +40,7 @@ doc_path: 与 page 填写同一路径
 
 `parent_id` 留空表示主项；具体场景归入已有主项时填写其 id，并同步主项的 `child_ids`。
 
-`status` 是收录处理，`compatibility` 是相容性判断，两个字段不能混用。合法状态见 [registry.yaml](./registry.yaml)。`internet_theory` 描述内容类型，不表示来源已核验；`source_evidence_type`、`sources` 与待补事项记录实际证据情况。只有真实来源才放入 `sources`；记录 URL、标题、作者或来源主体，以及“原始主张 / 转述 / 专业资料”的角色。暂时不知道源头时保留空数组，不生成虚假链接。
+`status` 是收录处理，`compatibility` 记录是否符合原则，两个字段不能混用。合法状态见 [registry.yaml](./registry.yaml)。`internet_theory` 描述内容类型，不表示来源已核验；`source_evidence_type`、`sources` 与待补事项记录实际证据情况。只有真实来源才放入 `sources`；记录 URL、标题、作者或来源主体，以及“原始主张 / 转述 / 专业资料”的角色。暂时不知道源头时保留空数组，不生成虚假链接。
 
 成本与品质维度使用 [constitution/core-principles.yaml](../constitution/core-principles.yaml) 中的 id，只填实际相关项。维度标签不等于改善结论；用 `cost_changes` 写减少与增加，用 `quality_effects` 写维持与改善，并在风险和边界中交代可能损失。需要时可增加计算假设或未知项，不编出统一评分和确定收益。维护费用与金钱、时间的关联可以同时标记，计算总账时同一笔支出不重复相加。
 
