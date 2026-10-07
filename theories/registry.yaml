@@ -1,5 +1,5 @@
 schema_version: '1.0'
-version: 0.2.0
+version: 0.3.0
 language: zh-CN
 updated_at: '2026-10-07'
 constitution_version: 0.1.0
@@ -16,7 +16,7 @@ compatibility_definitions:
   incompatible: 不符合
   uncertain: 继续观察
 status_note: 收录状态不等于相容性结论，也不等于来源已经核验。相容性必须针对明确主张和适用条件判断。
-initial_review_note: 四项有条件收录，两项观察中；每篇列明适用条件和待补内容。
+initial_review_note: 五个主项：三项有条件收录，两项观察中。租房属于租万物的子项，按其居住边界有条件收录。
 theories:
 - id: water
   name: 大水理论
@@ -61,6 +61,8 @@ theories:
   review_status: initial_editorial
   review_note: 完整主张待补充。
   page: docs/04-过日子的具体方法/01-大水理论.md
+  parent_id: null
+  child_ids: []
 - id: sleep
   name: 长睡眠理论
   aliases:
@@ -96,6 +98,8 @@ theories:
   review_status: initial_editorial
   review_note: 作者与原始来源待补充。
   page: docs/04-过日子的具体方法/02-长睡眠理论.md
+  parent_id: null
+  child_ids: []
 - id: lean-muscle
   name: 薄肌理论
   aliases:
@@ -148,41 +152,8 @@ theories:
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
   page: docs/04-过日子的具体方法/03-薄肌理论.md
-- id: housing
-  name: 低成本租房
-  aliases:
-  - 低租金居住
-  - 低成本居住
-  category: 居住
-  summary: 在安全和基本居住质量不退步的前提下，比较租金、通勤、能耗和搬迁等总成本。
-  status: conditional
-  compatibility: partly_compatible
-  source_type: internet_term_unverified
-  sources: []
-  source_note: 作者与原始来源待补充。
-  core_principles:
-  - P01
-  - P02
-  - P03
-  - P06
-  - P08
-  - P10
-  benefits:
-  - 减少位置或装修展示溢价
-  - 把住房选择放到总成本中比较
-  - 为其他核心需要保留资源
-  risks:
-  - 消防和房屋安全风险
-  - 潮湿噪声与通勤负担
-  - 合同押金和提前退租风险
-  boundaries:
-  - 不住有明显安全隐患或缺乏基本居住条件的房屋。
-  - 实地核查房屋、出租资格、合同、押金和费用，不只看照片和月租。
-  - 不能将健康和长期疲劳当作被省略的成本。
-  recommendation: 用总账比较可行房源，安全和基本居住质量先通过。
-  review_status: initial_editorial
-  review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/04-过日子的具体方法/04-低成本租房.md
+  parent_id: null
+  child_ids: []
 - id: secondhand
   name: 二手消费
   aliases:
@@ -219,40 +190,90 @@ theories:
   recommendation: 从容易验货、风险可控、确有需要的物品开始，算清维修运费和维护成本。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/04-过日子的具体方法/05-二手消费.md
+  page: docs/04-过日子的具体方法/04-二手消费.md
+  parent_id: null
+  child_ids: []
 - id: renting
   name: 租万物
   aliases:
   - 租赁消费
   - 使用而不拥有
-  category: 消费与使用
-  summary: 对低频、短期需求考虑租赁，比较总租金、押金、赔偿、归还和购买维护成本。
+  category: 使用权与租用
+  summary: 按实际需要和期限获得使用权，覆盖租房、工具、出行与活动用品、短期设备和阶段性家具；比较品质、总成本与维护负担，不一概主张租比买好。
   status: conditional
   compatibility: partly_compatible
   source_type: internet_term_unverified
   sources: []
   source_note: 作者与原始来源待补充。
   core_principles:
+  - P01
+  - P02
   - P03
   - P04
   - P05
   - P06
   - P07
   - P08
+  - P10
   benefits:
-  - 满足短期或低频需求
-  - 减少闲置和储存负担
-  - 避免为一次使用长期持有
+  - 用适合自己的方式满足居住与使用需求
+  - 减少用不上的配置和展示溢价
+  - 适合时减少闲置、储存和维护负担
+  - 为真正重要的生活品质保留资源
   risks:
   - 累计租金超过购买成本
   - 押金与高额赔偿责任
   - 自动续费或租转购条款
   - 卫生和关键性能无法核验
+  - 居住质量、房屋安全与通勤代价
   boundaries:
   - 签约前看清总费用、押金、续费、赔偿和退出条件。
   - 不承担明显无法负担的合同责任，不把租赁当作无风险分期。
   - 安全与卫生要求不能因为租来使用而降低。
-  recommendation: 优先评估低频短期场景；高频长期使用要重新比较购买与租赁总成本。
+  - 租房先保住安全、基本居住质量和合理通勤，不只比较月租。
+  recommendation: 按具体场景、所需期限、生活品质与完整成本比较租用和购买；租房可长期高频使用，不套用低频物品的判断。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/04-过日子的具体方法/06-租万物.md
+  page: docs/04-过日子的具体方法/05-租万物.md
+  parent_id: null
+  child_ids:
+  - housing
+- id: housing
+  name: 租房
+  aliases:
+  - 低成本租房
+  - 低租金居住
+  - 低成本居住
+  category: 居住
+  summary: 租万物中的居住子项：在安全和基本居住质量不退步的前提下，比较租金、通勤、能耗和搬迁等住房总成本。
+  status: conditional
+  compatibility: partly_compatible
+  source_type: internet_term_unverified
+  sources: []
+  source_note: 作者与原始来源待补充。
+  core_principles:
+  - P01
+  - P02
+  - P03
+  - P06
+  - P08
+  - P10
+  benefits:
+  - 减少位置或装修展示溢价
+  - 把住房选择放到总成本中比较
+  - 为其他核心需要保留资源
+  risks:
+  - 消防和房屋安全风险
+  - 潮湿噪声与通勤负担
+  - 合同押金和提前退租风险
+  boundaries:
+  - 不住有明显安全隐患或缺乏基本居住条件的房屋。
+  - 实地核查房屋、出租资格、合同、押金和费用，不只看照片和月租。
+  - 不能将健康和长期疲劳当作被省略的成本。
+  recommendation: 用总账比较可行房源，安全和基本居住质量先通过。
+  review_status: initial_editorial
+  review_note: 按正文列明的条件收录，具体适用性因人而异。
+  page: docs/04-过日子的具体方法/租万物/01-租房.md
+  parent_id: renting
+  child_ids: []
+hierarchy_note: parent_id 为 null 的条目是主项；子项按 parent_id 归入所属主项，不与主项并列计数。主项收录不自动代表所有子场景适用。

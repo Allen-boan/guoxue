@@ -8,6 +8,8 @@
 id: 待填写唯一英文标识
 name: 待填写理论名称
 aliases: []
+parent_id: null
+child_ids: []
 category: 待填写
 summary: 待填写一句话介绍
 status: observation
@@ -23,6 +25,8 @@ recommendation: 尚未建议正式收录，待核查定义、来源与适用边�
 review_status: pending_human_review
 page: 待填写对应页面路径
 ```
+
+`parent_id` 留空表示主项；具体场景归入已有主项时填写其 id，并同步主项的 `child_ids`。
 
 `status` 是收录处理，`compatibility` 是相容性判断，两个字段不能混用。合法状态见 [registry.yaml](./registry.yaml)。只有经过核查的真实来源才放入 `sources`；建议记录 URL、标题、来源主体、访问日期，以及“原始主张 / 转述 / 专业资料”的角色。暂时不知道源头时保留空数组，不生成虚假链接。
 
