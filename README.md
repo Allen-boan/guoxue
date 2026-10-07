@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/guide-cover.png" alt="“过学”：把资源留给真正重要的事。生活成本可以低，生活品质不能低。" width="960">
+</p>
+
 <h1 align="center">“过的人”行动指南</h1>
 
 <p align="center">
