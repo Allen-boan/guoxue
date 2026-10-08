@@ -1,14 +1,14 @@
 schema_version: '1.1'
-version: 0.4.0
+version: 0.5.0
 language: zh-CN
-updated_at: '2026-10-07'
-constitution_version: 0.2.0
+updated_at: '2026-10-08'
+constitution_version: 0.3.0
 status_definitions:
   core: 核心纲领或基本原则；变更必须人工审核。
   accepted: 正式收录；已完成所需人工复核与来源核查。
   conditional: 有条件收录；仅在列明的边界和实践解释下纳入，条件与待核事项必须公开。
   observation: 观察中；证据、定义或适用性不足，尚未推荐收录。
-  rejected: 不予收录；已记录冲突原则、风险或其他拒绝理由。
+  rejected: 不予收录；已记录生活品质损失、边界风险或其他拒绝理由。
   archived: 归档；保留历史，不再作为当前推荐。
 compatibility_definitions:
   compatible: 符合
@@ -41,10 +41,6 @@ theories:
   source_note: 作者：长安二球（大水教父），@TangSMer。完整原帖与主张待补充。
   core_principles:
   - P01
-  - P03
-  - P04
-  - P07
-  - P08
   benefits:
   - 让日常饮水更方便
   - 减少不必要的饮品溢价
@@ -60,11 +56,11 @@ theories:
   recommendation: 完整理论待补充；安全、方便饮水的实践分析见正文。
   review_status: initial_editorial
   review_note: 完整主张待补充。
-  page: docs/04-过日子的具体方法/01-大水理论.md
+  page: docs/02-具体生活方法/01-大水理论.md
   parent_id: null
   child_ids: []
   source_evidence_type: creator_account
-  doc_path: docs/04-过日子的具体方法/01-大水理论.md
+  doc_path: docs/02-具体生活方法/01-大水理论.md
   cost_dimensions:
   - money
   - time
@@ -113,11 +109,6 @@ theories:
   source_note: 作者与原始来源待补充。
   core_principles:
   - P01
-  - P03
-  - P05
-  - P06
-  - P08
-  - P09
   benefits:
   - 减少无效熬夜
   - 将资源投入基本休息
@@ -133,11 +124,11 @@ theories:
   recommendation: 原始主张待补充；合理睡眠的实践分析见正文。
   review_status: initial_editorial
   review_note: 作者与原始来源待补充。
-  page: docs/04-过日子的具体方法/02-长睡眠理论.md
+  page: docs/02-具体生活方法/02-长睡眠理论.md
   parent_id: null
   child_ids: []
   source_evidence_type: internet_term_unverified
-  doc_path: docs/04-过日子的具体方法/02-长睡眠理论.md
+  doc_path: docs/02-具体生活方法/02-长睡眠理论.md
   cost_dimensions:
   - money
   - time
@@ -203,11 +194,6 @@ theories:
   source_note: 作者：邵艾伦 Alan。来源见本人视频与后续教程。
   core_principles:
   - P01
-  - P04
-  - P07
-  - P08
-  - P09
-  - P10
   benefits:
   - 关注实际体能需要
   - 选择能坚持的运动方式
@@ -223,11 +209,11 @@ theories:
   recommendation: 从原视频理解通过训练获得反馈的思路，按个人情况核查实际收益、维护投入与健康边界，不把“过学”自己的解释当作作者原定义。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/04-过日子的具体方法/03-薄肌理论.md
+  page: docs/02-具体生活方法/03-薄肌理论.md
   parent_id: null
   child_ids: []
   source_evidence_type: original_creator_video
-  doc_path: docs/04-过日子的具体方法/03-薄肌理论.md
+  doc_path: docs/02-具体生活方法/03-薄肌理论.md
   cost_dimensions:
   - money
   - time
@@ -277,12 +263,7 @@ theories:
   sources: []
   source_note: 具体理论作者与原始来源待补充。
   core_principles:
-  - P02
-  - P03
-  - P06
-  - P07
-  - P08
-  - P10
+  - P01
   benefits:
   - 减少新旧价差中的非功能成本
   - 让已有物品继续使用
@@ -299,11 +280,11 @@ theories:
   recommendation: 从容易验货、风险可控、确有需要的物品开始，算清维修运费和维护成本。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/04-过日子的具体方法/04-二手消费.md
+  page: docs/02-具体生活方法/04-二手消费.md
   parent_id: null
   child_ids: []
   source_evidence_type: internet_term_unverified
-  doc_path: docs/04-过日子的具体方法/04-二手消费.md
+  doc_path: docs/02-具体生活方法/04-二手消费.md
   cost_dimensions:
   - money
   - time
@@ -355,14 +336,6 @@ theories:
   source_note: 作者与原始来源待补充。
   core_principles:
   - P01
-  - P02
-  - P03
-  - P04
-  - P05
-  - P06
-  - P07
-  - P08
-  - P10
   benefits:
   - 用适合自己的方式满足居住与使用需求
   - 减少用不上的配置和展示溢价
@@ -382,12 +355,12 @@ theories:
   recommendation: 按具体场景、所需期限、生活品质与完整成本比较租用和购买；租房可长期高频使用，不套用低频物品的判断。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/04-过日子的具体方法/05-租万物.md
+  page: docs/02-具体生活方法/05-租万物.md
   parent_id: null
   child_ids:
   - housing
   source_evidence_type: internet_term_unverified
-  doc_path: docs/04-过日子的具体方法/05-租万物.md
+  doc_path: docs/02-具体生活方法/05-租万物.md
   cost_dimensions:
   - money
   - time
@@ -445,11 +418,6 @@ theories:
   source_note: 作者与原始来源待补充。
   core_principles:
   - P01
-  - P02
-  - P03
-  - P06
-  - P08
-  - P10
   benefits:
   - 减少位置或装修展示溢价
   - 把住房选择放到总成本中比较
@@ -465,11 +433,11 @@ theories:
   recommendation: 用总账比较可行房源，安全和基本居住质量先通过。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/04-过日子的具体方法/租万物/01-租房.md
+  page: docs/02-具体生活方法/租万物/01-租房.md
   parent_id: renting
   child_ids: []
   source_evidence_type: internet_term_unverified
-  doc_path: docs/04-过日子的具体方法/租万物/01-租房.md
+  doc_path: docs/02-具体生活方法/租万物/01-租房.md
   cost_dimensions:
   - money
   - time
@@ -515,6 +483,6 @@ theories:
 hierarchy_note: parent_id 为 null 的条目是主项；子项按 parent_id 归入所属主项，不与主项并列计数。主项收录不自动代表所有子场景适用。
 source_type_definitions:
   internet_theory: 已有网络理论或网络实践；该分类不表示原始来源已找到或主张已通过审核。
-  guoxue_practice: “过学”按总纲整理的实践方法；不声称本项目在互联网上首次提出这些做法。
+  guoxue_practice: “过学”依据生活品质判断整理的实践方法；不声称本项目在互联网上首次提出这些做法。
 dimension_note: cost_dimensions 与 quality_dimensions 只标记相关维度，不代表所有成本都下降或所有品质都提高。成本增减与品质变化见 cost_changes、quality_effects、risks
   和 boundaries；不同成本不直接相加，健康与安全底线不作价格交换。
