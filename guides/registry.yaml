@@ -1,9 +1,9 @@
 schema_version: '1.0'
-version: 0.2.0
+version: 0.3.0
 language: zh-CN
 updated_at: '2026-10-08'
 constitution_version: 0.3.0
-theories_version: 0.5.0
+theories_version: 0.6.0
 review_note: 本版为编辑整理；收录状态与审核进度分别记录，实践纳入不等于医学认证或完整网络主张已核验。
 source_type_definitions:
   internet_theory: 引用已有网络理论，作者与来源通过 theory_id 查询，不自动提升原理论状态。
@@ -12,58 +12,58 @@ dimension_note: 仅记录相关维度，变化方向见 cost_changes 与 quality
 domains:
 - id: food
   name: 饮食
-  doc_path: docs/03-日常行动/01-饮食.md
+  doc_path: docs/02-过日子的办法/01-饮食.md
 - id: sleep
   name: 睡眠
-  doc_path: docs/03-日常行动/02-睡眠.md
-- id: housing
-  name: 居住
-  doc_path: docs/03-日常行动/03-居住.md
-- id: clothing
-  name: 穿衣
-  doc_path: docs/03-日常行动/04-穿衣.md
-- id: shopping
-  name: 消费购物
-  doc_path: docs/03-日常行动/05-消费购物.md
-- id: ownership
-  name: 物品使用与维护
-  doc_path: docs/03-日常行动/06-物品使用与维护.md
-- id: transport
-  name: 交通通勤
-  doc_path: docs/03-日常行动/07-交通通勤.md
+  doc_path: docs/02-过日子的办法/02-睡眠.md
 - id: health
   name: 健康与运动
-  doc_path: docs/03-日常行动/08-健康与运动.md
-- id: time
-  name: 时间管理
-  doc_path: docs/03-日常行动/09-时间管理.md
-- id: attention
-  name: 注意力管理
-  doc_path: docs/03-日常行动/10-注意力管理.md
-- id: work
-  name: 工作
-  doc_path: docs/03-日常行动/11-工作.md
-- id: learning
-  name: 学习
-  doc_path: docs/03-日常行动/12-学习.md
+  doc_path: docs/02-过日子的办法/03-健康与运动.md
+- id: housing
+  name: 居住
+  doc_path: docs/02-过日子的办法/04-居住.md
+- id: transport
+  name: 交通通勤
+  doc_path: docs/02-过日子的办法/05-交通通勤.md
 - id: housework
   name: 家务与收纳
-  doc_path: docs/03-日常行动/13-家务与收纳.md
-- id: relationships
-  name: 社交关系
-  doc_path: docs/03-日常行动/14-社交关系.md
-- id: leisure
-  name: 旅行与娱乐
-  doc_path: docs/03-日常行动/15-旅行与娱乐.md
-- id: safety
-  name: 安全与风险
-  doc_path: docs/03-日常行动/16-安全与风险.md
-- id: digital
-  name: 数字生活
-  doc_path: docs/03-日常行动/17-数字生活.md
+  doc_path: docs/02-过日子的办法/06-家务与收纳.md
+- id: clothing
+  name: 穿衣
+  doc_path: docs/02-过日子的办法/07-穿衣.md
+- id: shopping
+  name: 消费购物
+  doc_path: docs/02-过日子的办法/08-消费购物.md
+- id: ownership
+  name: 物品使用与维护
+  doc_path: docs/02-过日子的办法/09-物品使用与维护.md
 - id: lifecycle
   name: 物品生命周期
-  doc_path: docs/03-日常行动/18-物品生命周期.md
+  doc_path: docs/02-过日子的办法/10-物品生命周期.md
+- id: time
+  name: 时间管理
+  doc_path: docs/02-过日子的办法/11-时间管理.md
+- id: attention
+  name: 注意力管理
+  doc_path: docs/02-过日子的办法/12-注意力管理.md
+- id: digital
+  name: 数字生活
+  doc_path: docs/02-过日子的办法/13-数字生活.md
+- id: work
+  name: 工作
+  doc_path: docs/02-过日子的办法/14-工作.md
+- id: learning
+  name: 学习
+  doc_path: docs/02-过日子的办法/15-学习.md
+- id: relationships
+  name: 社交关系
+  doc_path: docs/02-过日子的办法/16-社交关系.md
+- id: leisure
+  name: 旅行与娱乐
+  doc_path: docs/02-过日子的办法/17-旅行与娱乐.md
+- id: safety
+  name: 安全与风险
+  doc_path: docs/02-过日子的办法/18-安全与风险.md
 guides:
 - id: food-basics
   name: 基础饮食优先
@@ -98,7 +98,7 @@ guides:
   - 有食物过敏、疾病相关饮食要求、孕期或其他特殊需要时，不能直接套普通搭配。
   recommendation: 检查自己常吃的几顿饭：是否有主食、蛋白质食物、蔬菜水果，以及安全的水；找最容易补上的缺口。 先把基本饮食安排稳定，再决定昂贵食品是否带来明确价值；不把保健品当成正常吃饭的替代。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/01-饮食.md
+  doc_path: docs/02-过日子的办法/01-饮食.md
   anchor: food-basics
   cost_changes:
     reduced:
@@ -141,7 +141,7 @@ guides:
   - 饮食限制、工作班次或照护安排复杂时，先保住可获得的合适食物。
   recommendation: 给普通工作日留几个可靠选项：吃得舒服、方便取得、总价可接受。 吃完看看实际感受。真正喜欢可以再去，只为拍照而疲惫就换方式。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/01-饮食.md
+  doc_path: docs/02-过日子的办法/01-饮食.md
   anchor: food-daily-and-experience
   cost_changes:
     reduced:
@@ -184,7 +184,7 @@ guides:
   - 需要特殊配方、便携分装，或无法保证散装卫生与追溯时。
   recommendation: 先确定自己要吃什么、能吃多少，比较同类食品的可食用量和实际价格。 买正常用量，吃过再判断。大包装若吃不完或储存不便，也未必划算。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/01-饮食.md
+  doc_path: docs/02-过日子的办法/01-饮食.md
   anchor: food-less-packaging
   cost_changes:
     reduced:
@@ -220,14 +220,14 @@ guides:
   risks:
   - 清洗容器、携带和确认水源也要花时间；大瓶太重就会增加负担。
   boundaries:
-  - 不强迫大量饮水，不喝来源不明的水，不用喝水替代饮食和治疗。完整主张见原理论条目，本节是本书的行动分析。
+  - 不强迫大量饮水，不喝来源不明的水，不用喝水替代饮食和治疗。
   applicable_when:
   - 日常饮水不方便，或想减少临时购买饮料时。
   not_applicable_when:
   - 医嘱限制饮水、特殊健康情况或高温高强度活动，不能照抄普通日常安排。
   recommendation: 选一个经常缺水的场景，先用已有且材质适合、好清洗的容器。 试几天看是否更方便；太重、漏水或难洗，就换小杯或可靠补水点。
   review_status: source_pending
-  doc_path: docs/03-日常行动/01-饮食.md
+  doc_path: docs/02-过日子的办法/01-饮食.md
   anchor: food-water
   cost_changes:
     reduced:
@@ -270,7 +270,7 @@ guides:
   - 轮班、育儿、照护时先争取可行支持；持续失眠、明显嗜睡或睡很久仍异常疲惫，不能靠继续加时解决。
   recommendation: 观察几天睡觉、起床与白天状态，找出最常挤占睡眠的可改变因素。 看自己白天的感受和生活功能，而不是只追手环分数或卧床时长。
   review_status: source_pending
-  doc_path: docs/03-日常行动/02-睡眠.md
+  doc_path: docs/02-过日子的办法/02-睡眠.md
   anchor: sleep-adequate
   cost_changes:
     reduced:
@@ -315,7 +315,7 @@ guides:
   - 根源是疾病、工作安排或居住安全隐患时，买装备不能替代必要处理。
   recommendation: 先找最明显的干扰：光、噪声、温度或床具不适，只处理最关键的一项。 用一段时间观察是否更舒服。没效果就停下，不继续叠加一堆设备。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/02-睡眠.md
+  doc_path: docs/02-过日子的办法/02-睡眠.md
   anchor: sleep-environment
   cost_changes:
     reduced:
@@ -328,7 +328,7 @@ guides:
     improved:
     - 实际睡眠舒适度
 - id: housing-rental-total
-  name: 租万物 · 租房：看完整住房成本
+  name: 租房
   category: housing
   source_type: internet_theory
   summary: 房租省下来了，日子不能全赔在路上。
@@ -361,7 +361,7 @@ guides:
   - 无障碍、照护、夜间通勤、居家工作等有特殊需求时，不能套统一房型与距离。
   recommendation: 列不能退让的条件，再把月租、交通、水电、服务费、押金占用与搬家放在同一份比较中。 核验出租权限，读清维修、涨租、押金与解约规则，保存合同、交接和付款记录。
   review_status: source_pending
-  doc_path: docs/03-日常行动/03-居住.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
   anchor: housing-rental-total
   cost_changes:
     reduced:
@@ -404,7 +404,7 @@ guides:
   - 合租、租赁或照护场景，应先确认权限和共同需要，不能只按自己习惯改。
   recommendation: 回想一周最常用的地方，写下一个反复出现的麻烦，例如桌面太暗或厨房操作不顺。 观察一周有没有更顺手，再处理下一处，不一次把全家改成展示间。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/03-居住.md
+  doc_path: docs/02-过日子的办法/04-居住.md
   anchor: housing-high-use-spaces
   cost_changes:
     reduced:
@@ -448,7 +448,7 @@ guides:
   - 有儿童、无障碍、居家工作或照护需要时，必须保留足够活动与私密空间。
   recommendation: 按睡觉、吃饭、做饭、工作、洗漱与储物画出实际活动路线，找堵点和长期闲置区。 比较房源时看可用布局、采光、通风和共同生活需要，不只看面积单价。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/03-居住.md
+  doc_path: docs/02-过日子的办法/04-居住.md
   anchor: housing-useful-space
   cost_changes:
     reduced:
@@ -491,7 +491,7 @@ guides:
   - 制服、专业防护、特殊体型和身体需求，应先满足对应条件。
   recommendation: 看看最近常穿的衣服，记录合身、舒服、好清洗的特点，先找真实缺口。 暂缓重复购买；不合适的按状态修补、转让或处理，不急着再添一套。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/04-穿衣.md
+  doc_path: docs/02-过日子的办法/07-穿衣.md
   anchor: clothing-fewer-useful
   cost_changes:
     reduced:
@@ -531,7 +531,7 @@ guides:
   - 礼仪场合、专业防护和少见但必要的衣物，不能只按次数判定不值得。
   recommendation: 购买前按现有习惯估计多久能穿一次，不按“以后我会天天穿”计算。 穿过一段时间再回看实际次数，修正下一次选择；不为了摊薄成本硬穿不合适的衣服。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/04-穿衣.md
+  doc_path: docs/02-过日子的办法/07-穿衣.md
   anchor: clothing-cost-per-wear
   cost_changes:
     reduced:
@@ -573,7 +573,7 @@ guides:
   - 身体状态或工作条件变化，原款不适合时，不要为统一继续忍受。
   recommendation: 先从一种常用基础用品开始，试穿后记录品牌、型号、尺寸和实际感受。 按使用和洗衣频率补货；身体、气候或需求变了，就重新选择。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/04-穿衣.md
+  doc_path: docs/02-过日子的办法/07-穿衣.md
   anchor: clothing-standard-basics
   cost_changes:
     reduced:
@@ -585,7 +585,7 @@ guides:
     - 维持合身、舒适、好清洗与补货便利，也保留变化空间。
     improved: []
 - id: shopping-secondhand
-  name: 二手 / 闲鱼：买使用价值
+  name: 二手消费
   category: shopping
   source_type: internet_theory
   summary: 成色、保障和总成本，比新旧标签更值得看。
@@ -616,7 +616,7 @@ guides:
   - 无法判断安全历史、卫生或来源，或无时间验货时，应比较更有保障的渠道。
   recommendation: 先写用途、尺寸和必需功能，再对照新品价格，计入运费、清洁和可预见维修。 收到后先检验再确认；电子设备注意账户、隐私与数据安全。
   review_status: source_pending
-  doc_path: docs/03-日常行动/05-消费购物.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
   anchor: shopping-secondhand
   cost_changes:
     reduced:
@@ -629,7 +629,7 @@ guides:
     improved: []
   theory_id: secondhand
 - id: shopping-renting
-  name: 租万物：先决定怎么使用
+  name: 租万物
   category: shopping
   source_type: internet_theory
   summary: 需要使用价值，不一定需要所有权。
@@ -661,7 +661,7 @@ guides:
   - 取还或供给安排无法满足实际使用、长期总费用明显不合适，或费用与责任不清时；高频本身不是排除租用的理由。
   recommendation: 写用途、期限、需要随时可用的程度，先看看已有物品能不能解决。 确认物品与合同可靠，留好交接记录；使用期限延长时重算。
   review_status: source_pending
-  doc_path: docs/03-日常行动/05-消费购物.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
   anchor: shopping-renting
   cost_changes:
     reduced:
@@ -704,7 +704,7 @@ guides:
   - 医疗、卫生、专业防护等不适合共享试用的品类，或紧急必需品，不套这一步。
   recommendation: 找一次真实使用机会，借用、合规试用或短租，不为证明兴趣先买一套。 若需求持续，再比较租与买的总成本；试过发现不喜欢，也算得到有用答案。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/05-消费购物.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
   anchor: shopping-try-before-owning
   cost_changes:
     reduced:
@@ -745,7 +745,7 @@ guides:
   - 必要医疗、安全防护、急需工作工具等，不因冷静期耽误。
   recommendation: 非刚需、非紧急时先放愿望清单，写一句用途和预算，关闭催单提醒。 若确实需要且能承担总成本，就买；只因优惠诱人，就让清单继续空着。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/05-消费购物.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
   anchor: shopping-cooling-off
   cost_changes:
     reduced:
@@ -788,7 +788,7 @@ guides:
   - 专业作业、卫生、防护和安全要求明确时，不能拿不合格替代品凑合。
   recommendation: 把任务写成具体要求，再检查已有东西是否能完成必要部分。 购买理由写清“现有东西哪里不够”，再决定升级。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/05-消费购物.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
   anchor: shopping-substitute
   cost_changes:
     reduced:
@@ -831,7 +831,7 @@ guides:
   - 影响生命安全、被召回或存在无法消除隐患的产品，不以维修坚持继续使用。
   recommendation: 确认故障与保修，咨询有能力的维修渠道，问清费用、预期寿命与保障。 修好后检验；反复故障或安全不能保证时，及时换方案。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/05-消费购物.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
   anchor: shopping-repair-before-replace
   cost_changes:
     reduced:
@@ -874,7 +874,7 @@ guides:
   - 旧方案不满足无障碍、效率、安全或支持需求时，不能为了成熟拒绝合理更新。
   recommendation: 列核心功能和使用环境，先确认可靠性、配件、保修与维修渠道。 电子设备确认安全更新与支持期限，不买已经不适合安全使用的旧型号。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/05-消费购物.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
   anchor: shopping-mature-products
   cost_changes:
     reduced:
@@ -918,7 +918,7 @@ guides:
   - 低额简单用品不必写复杂表，紧急必要需求也不能为算账耽误处理。
   recommendation: 按预计使用期限算金钱账：购置价＋耗材、维修、能源等支出－可合理预期的转售收入；不确定收入按保守情景看。 并排比较能满足需求的方案，检查预算与现金流；选择后再用实际账修正预估。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/06-物品使用与维护.md
+  doc_path: docs/02-过日子的办法/09-物品使用与维护.md
   anchor: ownership-total-cost
   cost_changes:
     reduced:
@@ -961,7 +961,7 @@ guides:
   - 某项复杂功能确实服务医疗、无障碍、工作或重要兴趣时，不能只求简单。
   recommendation: 看使用说明：要多久清洁、更换什么、耗材买不买得到、维修如何处理。 保留必要保养安排，定期看是否真的省事；没有用的附加功能就不再追。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/06-物品使用与维护.md
+  doc_path: docs/02-过日子的办法/09-物品使用与维护.md
   anchor: ownership-low-maintenance
   cost_changes:
     reduced:
@@ -1005,7 +1005,7 @@ guides:
   - 现有物品已够用，或升级只增加展示与营销卖点时，不必投入。
   recommendation: 找一个每天使用、确实有问题的物品，写清痛点，例如鞋不合脚或椅子不适合工作。 在预算内选择，使用后检查是否改善；没有真实变化就不继续加价追配置。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/06-物品使用与维护.md
+  doc_path: docs/02-过日子的办法/09-物品使用与维护.md
   anchor: ownership-high-frequency
   cost_changes:
     reduced:
@@ -1049,10 +1049,10 @@ guides:
   - 正在选住处、换工作地点或调整通勤路线，而且有几个真实可选的方案。
   not_applicable_when:
   - 预算很紧、需要照护家人或只有少数房源时，不能套“离公司近就一定好”；没有选择余地也不是不会过。
-  recommendation: 用平常上下班的时段试走路线，记下门到门时间、换乘和容易延误的环节。 把可行房源的租金、交通费、往返时间和居住体验放在一起比；租房的完整检查见[租万物中的租房](../02-具体生活方法/租万物/01-租房.md)。
+  recommendation: 用平常上下班的时段试走路线，记下门到门时间、换乘和容易延误的环节。 把可行房源的租金、交通费、往返时间和居住体验放在一起比。
     再看自己的预算和责任，选能长期承受的方案；暂时搬不了，也可以先减少一项路上折腾。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/07-交通通勤.md
+  doc_path: docs/02-过日子的办法/05-交通通勤.md
   anchor: commute-time-cost
   cost_changes:
     reduced:
@@ -1104,7 +1104,7 @@ guides:
   - 行动不便、带孩子、夜间出行、恶劣天气和携带重物时，不能照搬别人的低价路线。
   recommendation: 列出两三种可行方式，比较门到门时间、费用、换乘、天气和自己能承受的体力。 用常见场景试一次：工作日、买菜、雨天各需要什么；不必一种交通方式包办所有事情。 留下常用路线和一个可靠备选，交通条件变了再更新。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/07-交通通勤.md
+  doc_path: docs/02-过日子的办法/05-交通通勤.md
   anchor: effective-transport
   cost_changes:
     reduced:
@@ -1153,7 +1153,7 @@ guides:
   - 偏远地区、轮班、特殊照护和专业服务需求，不一定能在短距离内解决。
   recommendation: 标出自己每周真的会用的地方：买菜、基础餐食、运动、取件和必要服务。 找能顺路完成的安排；选住房时，把常用配套和可靠性一起看，而不是只看商圈名称。 保留重要服务的可达性，不为凑一个小圈子放弃合适医疗、工作或重要关系。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/07-交通通勤.md
+  doc_path: docs/02-过日子的办法/05-交通通勤.md
   anchor: local-life-circle
   cost_changes:
     reduced:
@@ -1205,7 +1205,7 @@ guides:
   - 已有诊疗安排、特殊营养需求或特殊身体情况，不按普通生活建议替换专业方案。
   recommendation: 先检查最近有没有长期吃不够、睡不够，或影响生活的明显不适。 把基本食物、休息和必要医疗排在低价值消费前；需要时寻求适合自己情况的专业帮助。 资源紧张时先争取可用的支持与低门槛服务，逐步改善，不拿困难给自己打道德分。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/08-健康与运动.md
+  doc_path: docs/02-过日子的办法/03-健康与运动.md
   anchor: health-first
   cost_changes:
     reduced:
@@ -1257,7 +1257,7 @@ guides:
   - 伤病、恢复期、特殊健康需求，以及不明确的检查或补剂推荐，不能直接套普通人的安排。
   recommendation: 从一项基础习惯开始：规律休息、适合自己的活动、可靠口腔护理或日常安全检查。 把所需物品放在顺手位置，安排可维持的时间；口腔和其他健康管理按合适的专业建议执行。 已有问题就及时处理，再调整日常安排，不用“我正在预防”替代必要诊疗。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/08-健康与运动.md
+  doc_path: docs/02-过日子的办法/03-健康与运动.md
   anchor: preventive-routine
   cost_changes:
     reduced:
@@ -1309,9 +1309,9 @@ guides:
   not_applicable_when:
   - 伤病、特殊健康状况、竞技或康复需求，以及越来越强的饮食与身材焦虑，不套泛用安排。
   recommendation: 先写一个生活目标，比如能规律运动、搬拿更轻松或享受一种运动，不先复制图片里的身材。 按身体情况、预算和空闲时间选适合的安排；需要技术指导时，找可靠指导，而不是靠受伤摸索。
-    观察是否能持续、有无异常不适、是否挤掉饮食和休息；完整讨论见[薄肌理论](../02-具体生活方法/03-薄肌理论.md)。
+    观察是否能持续、有无异常不适、是否挤掉饮食和休息。
   review_status: source_pending
-  doc_path: docs/03-日常行动/08-健康与运动.md
+  doc_path: docs/02-过日子的办法/03-健康与运动.md
   anchor: lean-muscle-practice
   cost_changes:
     reduced:
@@ -1366,7 +1366,7 @@ guides:
   - 伤病、特殊健康情况、竞技训练与康复要求，需要针对性指导。别人的训练量不等于你的起点。
   recommendation: 从有兴趣且条件允许的选项里挑一项，比如步行、跑步、力量训练、游泳或搏击。 安排可承受的频率和强度，留出恢复；有技术、场地或防护要求的项目，把它们算入预算。 过一段时间看实际参与、感受与身体反应，再调整；没坚持住先改安排，别先罚自己买一套新的。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/08-健康与运动.md
+  doc_path: docs/02-过日子的办法/03-健康与运动.md
   anchor: sustainable-exercise
   cost_changes:
     reduced:
@@ -1415,7 +1415,7 @@ guides:
   - 时间较宽裕而现金很紧、享受研究或动手过程时，不能只因花时间就判“不值”。
   recommendation: 估计额外操作要多久，再看实际能省多少钱，不把“满减金额”都当成净节省。 问这段时间原本要留给什么，是否被挤掉；预算紧时，花时间省钱也可能合理。 留下少数确实好用的省钱办法，重复流程太麻烦、收益太小时就换一种安排。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/09-时间管理.md
+  doc_path: docs/02-过日子的办法/11-时间管理.md
   anchor: time-value
   cost_changes:
     reduced:
@@ -1464,7 +1464,7 @@ guides:
   - 食品储存条件不合适、账单有不同截止期、照护需求不可预期时，不硬凑一批。
   recommendation: 找两三类适合合并的事，比如采购、账单检查、简单家务；先从一类试起。 按实际使用量和处理能力安排，不为了“批量划算”大量买货、把一天塞满。 做完看是否更轻松；容易拖延、需要及时完成或有储存限制的事，改回分次处理。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/09-时间管理.md
+  doc_path: docs/02-过日子的办法/11-时间管理.md
   anchor: batch-tasks
   cost_changes:
     reduced:
@@ -1513,7 +1513,7 @@ guides:
   - 特殊饮食、身体变化、工作着装要求或新风险出现时，需要重新确认适用性。
   recommendation: 找一个经常纠结的小问题，选出两三个自己满意、预算可承受的默认选项。 把选项记下来或放到顺手位置，普通日子直接用；想换口味、场景变了再另选。 当价格、身体情况或生活条件改变时再检查，不把默认答案变成终身承诺。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/09-时间管理.md
+  doc_path: docs/02-过日子的办法/11-时间管理.md
   anchor: default-options
   cost_changes:
     reduced:
@@ -1564,7 +1564,7 @@ guides:
   - 金额变化大、容易误付款、涉及敏感数据或需要个人判断的事项，不宜直接全自动。
   recommendation: 挑一个重复而规则清楚的动作，用现有工具先做简单提醒、固定清单或合适的自动支付。 自动支付前确认金额、周期、账户余额、取消方式和提醒；数据权限只给必要范围。 保留账单检查、异常提醒和手动处理办法；工具比原任务更费心时就停用。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/09-时间管理.md
+  doc_path: docs/02-过日子的办法/11-时间管理.md
   anchor: practical-automation
   cost_changes:
     reduced:
@@ -1612,7 +1612,7 @@ guides:
   - 工作、照护、社交支持或无障碍需求依赖某个平台时，要保留必要通道，不能一删了之。
   recommendation: 观察几天：哪些应用打开后经常偏离原本目的，哪些提醒把你拉回去。 先关掉一项无用入口，或换成目的明确的用法；已有好用工具，就不为管理注意力再装一大套软件。 需要时比较替代方案的功能、价格、权限和使用负担，留下真正顺手的一种。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/10-注意力管理.md
+  doc_path: docs/02-过日子的办法/12-注意力管理.md
   anchor: attention-is-cost
   cost_changes:
     reduced:
@@ -1661,7 +1661,7 @@ guides:
   - 值班、照护、紧急响应或某些工作要求随时接收消息，不能照搬统一静音规则。
   recommendation: 先关促销、推荐、无关互动和不需要实时处理的群提醒。 给工作必要消息、重要联系人和安全提醒保留合适通道；非紧急消息安排自己能接受的查看时间。 试用几天再调整，确认没漏掉必要账单、照护或工作信息。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/10-注意力管理.md
+  doc_path: docs/02-过日子的办法/12-注意力管理.md
   anchor: essential-notifications
   cost_changes:
     reduced:
@@ -1709,7 +1709,7 @@ guides:
   - 研究、创作、专业工作需要广泛阅读；不能把暂时没有直接用处的信息一律删除。
   recommendation: 写下眼下真正要处理的两三个问题，先关注能帮助这些问题的可靠信息。 减少重复账号、纯焦虑推送和看完无法判断真假的内容；关键健康与安全信息要核对可靠来源。 给兴趣和娱乐留主动选择的时间，不要求每次阅读都必须换成产出。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/10-注意力管理.md
+  doc_path: docs/02-过日子的办法/12-注意力管理.md
   anchor: information-diet
   cost_changes:
     reduced:
@@ -1758,7 +1758,7 @@ guides:
   - 预算非常紧、商品难以验货，或涉及医疗、安全、合同和重大财务决定时，不能随意缩减核查。
   recommendation: 先列出必须满足的功能、预算、风险检查和退出条件，筛掉不合格选项。 给普通低风险选择一个可调整的比较范围或结束时间，符合条件后就准备决定。 发现新信息会改变关键判断时继续查；只剩重复评论和小价差时停下来。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/10-注意力管理.md
+  doc_path: docs/02-过日子的办法/12-注意力管理.md
   anchor: research-stop
   cost_changes:
     reduced:
@@ -1810,7 +1810,7 @@ guides:
   recommendation: 记录一段时间的实际工作、必要准备、通勤和占用休息的时段，注明哪些数据只是估计。 用实际收入、相关支出和总投入时间作粗略比较，再补充稳定性、成长、保障、兴趣与家庭安排。
     先找可协商、可调整的一项流程；重大职业变化要评估过渡预算、责任和现实机会。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/11-工作.md
+  doc_path: docs/02-过日子的办法/14-工作.md
   anchor: effective-hourly-return
   cost_changes:
     reduced:
@@ -1861,7 +1861,7 @@ guides:
   - 涉及机密、个人数据、安全关键结果，或单位对工具有明确限制时，不能随意上传或替换流程。
   recommendation: 挑一个频繁重复的任务，先确认单位已有工具或简单模板能不能解决。 用非敏感材料小范围试，比较实际省时、出错和检查负担，把许可、权限与学习时间算进去。 有效再保留，留好原流程和退出办法；需要判断的关键结果仍由合适的人检查。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/11-工作.md
+  doc_path: docs/02-过日子的办法/14-工作.md
   anchor: useful-work-tools
   cost_changes:
     reduced:
@@ -1911,7 +1911,7 @@ guides:
   - 行业要求的资格、合理汇报、信任建立、求职表达和团队协作，不能统统判成包装。
   recommendation: 先确认当前工作或目标岗位真正需要的能力、成果和必要资格。 每项投入问一句：学到什么、做出什么、解决什么；保留有实际价值的学习和协作。 对只增加展示、却长期挤掉休息与有效工作的活动，减少频率或寻找更直接的替代。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/11-工作.md
+  doc_path: docs/02-过日子的办法/14-工作.md
   anchor: useful-career-investment
   cost_changes:
     reduced:
@@ -1964,7 +1964,7 @@ guides:
   - 收入紧张、照护责任重或就业选择有限时，不轻率要求别人少工作或马上离职。
   recommendation: 观察哪些工作安排反复破坏休息、饮食或带来安全风险，先把问题说具体。 在可行范围内减少一项低价值额外任务，争取休息、排班调整或合适支持；必要时使用正规求助渠道。 需要改变岗位或工时之前，先看必要开支、过渡余地和替代机会；明显健康问题应寻求专业评估。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/11-工作.md
+  doc_path: docs/02-过日子的办法/14-工作.md
   anchor: sustainable-workload
   cost_changes:
     reduced:
@@ -2015,7 +2015,7 @@ guides:
   - 专业训练、长期基础教育需要系统学习；不能只学眼前步骤，跳过必要理论与前置知识。
   recommendation: 把问题写成可操作的句子，例如“我要看懂这份账单”或“做出一个能使用的表格”。 找一份适合基础、内容可靠的材料，边学边尝试；关键概念不懂就补，不只抄操作。 用结果检验哪里还不会，再决定下一步；对纯兴趣学习，也可以把“理解和享受”写成目标。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/12-学习.md
+  doc_path: docs/02-过日子的办法/15-学习.md
   anchor: problem-led-learning
   cost_changes:
     reduced:
@@ -2064,7 +2064,7 @@ guides:
   - 资料明显错误、已经过时或缺少必要基础时，应换可靠材料，不能为了“用完已有的”继续受误导。
   recommendation: 选一份已经拥有、与当前问题有关的材料，暂停继续买相似内容。 看完一个小部分就做一次练习、写自己的解释或完成一个小作品；输出可以只给自己看。 检查卡在哪里，针对缺口补材料或寻求反馈，不用购买更多内容掩盖练习不足。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/12-学习.md
+  doc_path: docs/02-过日子的办法/15-学习.md
   anchor: practice-before-courses
   cost_changes:
     reduced:
@@ -2113,7 +2113,7 @@ guides:
   - 健康、安全、法律、职业资质、专业职责和其他容错低的任务，不按这句话降低准确要求。
   recommendation: 明确一个普通、低风险的使用场景，写下“能用”的标准与必须守住的要求。 把必要基础学好，完成一次可检查的小任务；常见错误和风险也要认识。 够用后先去使用，遇到新问题再加深；愿意深入的兴趣和职业目标，可以继续投入。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/12-学习.md
+  doc_path: docs/02-过日子的办法/15-学习.md
   anchor: fit-for-purpose-learning
   cost_changes:
     reduced:
@@ -2163,7 +2163,7 @@ guides:
   - 自己很享受精细照料，且成本可承受
   recommendation: 下次买常用物品时，先问清怎么清洁，再决定要不要买。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/13-家务与收纳.md
+  doc_path: docs/02-过日子的办法/06-家务与收纳.md
   anchor: guide-easy-cleaning
   cost_changes:
     reduced:
@@ -2210,7 +2210,7 @@ guides:
   - 只是因为别人说简约才强行清空
   recommendation: 先整理一个台面，留下喜欢的，再决定是否继续。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/13-家务与收纳.md
+  doc_path: docs/02-过日子的办法/06-家务与收纳.md
   anchor: guide-fewer-ornaments
   cost_changes:
     reduced:
@@ -2257,7 +2257,7 @@ guides:
   - 公共物品必须遵循已有安全管理规则
   recommendation: 先给最常找不到的几样东西安排位置，边用边改。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/13-家务与收纳.md
+  doc_path: docs/02-过日子的办法/06-家务与收纳.md
   anchor: guide-fixed-places
   cost_changes:
     reduced:
@@ -2306,7 +2306,7 @@ guides:
   - 必要应急物资尚不充足
   recommendation: 采购前先查库存，把必需余量与促销囤货分开。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/13-家务与收纳.md
+  doc_path: docs/02-过日子的办法/06-家务与收纳.md
   anchor: guide-sensible-stock
   cost_changes:
     reduced:
@@ -2354,7 +2354,7 @@ guides:
   - 照护、工作或公共责任需要合理参与
   recommendation: 少参加一次纯凑数的活动，把时间认真留给一个重要的人。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/14-社交关系.md
+  doc_path: docs/02-过日子的办法/16-社交关系.md
   anchor: guide-relationship-quality
   cost_changes:
     reduced:
@@ -2400,7 +2400,7 @@ guides:
   - 必要礼节或职业安排有实际意义
   recommendation: 先报自己的预算，再商量共同体验的方案。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/14-社交关系.md
+  doc_path: docs/02-过日子的办法/16-社交关系.md
   anchor: guide-no-conformity-spending
   cost_changes:
     reduced:
@@ -2450,7 +2450,7 @@ guides:
   - 被要求承担持续超出能力的单向付出
   recommendation: 为一个重要的人做一件具体、合适、负担得起的事。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/14-社交关系.md
+  doc_path: docs/02-过日子的办法/16-社交关系.md
   anchor: guide-invest-important-relationships
   cost_changes:
     reduced:
@@ -2499,7 +2499,7 @@ guides:
   - 必须遵守预约、团队安排或安全时间窗口
   recommendation: 删掉一个只为凑数的项目，把时间留给最想体验的事。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/15-旅行与娱乐.md
+  doc_path: docs/02-过日子的办法/17-旅行与娱乐.md
   anchor: guide-travel-not-checklist
   cost_changes:
     reduced:
@@ -2547,7 +2547,7 @@ guides:
   - 淡季天气、交通或服务条件不适合安全出行
   recommendation: 比较两三个可行时段的完整条件，再决定是否错峰。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/15-旅行与娱乐.md
+  doc_path: docs/02-过日子的办法/17-旅行与娱乐.md
   anchor: guide-off-peak-leisure
   cost_changes:
     reduced:
@@ -2594,7 +2594,7 @@ guides:
   - 为“值回票价”增加本不需要的娱乐时间
   recommendation: 只拿这个比值复盘一项消费，并同时写下真实体验。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/15-旅行与娱乐.md
+  doc_path: docs/02-过日子的办法/17-旅行与娱乐.md
   anchor: guide-entertainment-hour-cost
   cost_changes:
     reduced:
@@ -2644,7 +2644,7 @@ guides:
   - 方案超出预算或根本无法覆盖实际风险
   recommendation: 先检查一个最重要的风险是否有可用退路，而不是先买东西。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/16-安全与风险.md
+  doc_path: docs/02-过日子的办法/18-安全与风险.md
   anchor: guide-safety-reserve
   cost_changes:
     reduced:
@@ -2691,7 +2691,7 @@ guides:
   - 购买的防护与实际用途不符
   recommendation: 先检查正在使用的一件必要防护是否合格、适配且状态可靠。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/16-安全与风险.md
+  doc_path: docs/02-过日子的办法/18-安全与风险.md
   anchor: guide-essential-protection
   cost_changes:
     reduced:
@@ -2740,7 +2740,7 @@ guides:
   - 新工具无法可靠迁移资料或满足实际需要
   recommendation: 从一种重复功能开始，先核验替代与资料，再做精简。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/17-数字生活.md
+  doc_path: docs/02-过日子的办法/13-数字生活.md
   anchor: guide-fewer-apps
   cost_changes:
     reduced:
@@ -2790,7 +2790,7 @@ guides:
   - 订阅仍是工作、照护或重要备份的必要工具
   recommendation: 检查一项不用的续费，涉及资料时完成迁移核验再取消。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/17-数字生活.md
+  doc_path: docs/02-过日子的办法/13-数字生活.md
   anchor: guide-subscription-audit
   cost_changes:
     reduced:
@@ -2837,7 +2837,7 @@ guides:
   - 把敏感资料上传到不可信服务
   recommendation: 今天先给一份不可替代的资料做独立副本，并实际试着恢复。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/17-数字生活.md
+  doc_path: docs/02-过日子的办法/13-数字生活.md
   anchor: guide-data-backup
   cost_changes:
     reduced:
@@ -2888,7 +2888,7 @@ guides:
   - 退出方案依赖未经核实的渠道或保证
   recommendation: 下次购买前先回答退出问题，再把它放进总成本比较。
   review_status: editorial_reviewed
-  doc_path: docs/03-日常行动/18-物品生命周期.md
+  doc_path: docs/02-过日子的办法/10-物品生命周期.md
   anchor: guide-exit-cost
   cost_changes:
     reduced:
@@ -2902,3 +2902,4 @@ guides:
     - 守住资料、财产和合规处理的安全
     improved:
     - 需求变化、故障或搬家时更容易调整
+location_note: doc_path 与 anchor 定位唯一正文；internet_theory 条目和对应理论登记共享该位置。category 用于领域检索，不要求与正文所在领域一致；租房可从居住入口链接到消费购物页中租万物的子节。

@@ -1,8 +1,9 @@
 schema_version: '1.1'
-version: 0.5.0
+version: 0.6.0
 language: zh-CN
 updated_at: '2026-10-08'
 constitution_version: 0.3.0
+guides_version: 0.3.0
 status_definitions:
   core: 核心纲领或基本原则；变更必须人工审核。
   accepted: 正式收录；已完成所需人工复核与来源核查。
@@ -56,11 +57,12 @@ theories:
   recommendation: 完整理论待补充；安全、方便饮水的实践分析见正文。
   review_status: initial_editorial
   review_note: 完整主张待补充。
-  page: docs/02-具体生活方法/01-大水理论.md
+  page: docs/02-过日子的办法/01-饮食.md
   parent_id: null
   child_ids: []
   source_evidence_type: creator_account
-  doc_path: docs/02-具体生活方法/01-大水理论.md
+  doc_path: docs/02-过日子的办法/01-饮食.md
+  anchor: food-water
   cost_dimensions:
   - money
   - time
@@ -124,11 +126,12 @@ theories:
   recommendation: 原始主张待补充；合理睡眠的实践分析见正文。
   review_status: initial_editorial
   review_note: 作者与原始来源待补充。
-  page: docs/02-具体生活方法/02-长睡眠理论.md
+  page: docs/02-过日子的办法/02-睡眠.md
   parent_id: null
   child_ids: []
   source_evidence_type: internet_term_unverified
-  doc_path: docs/02-具体生活方法/02-长睡眠理论.md
+  doc_path: docs/02-过日子的办法/02-睡眠.md
+  anchor: sleep-adequate
   cost_dimensions:
   - money
   - time
@@ -209,11 +212,12 @@ theories:
   recommendation: 从原视频理解通过训练获得反馈的思路，按个人情况核查实际收益、维护投入与健康边界，不把“过学”自己的解释当作作者原定义。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/02-具体生活方法/03-薄肌理论.md
+  page: docs/02-过日子的办法/03-健康与运动.md
   parent_id: null
   child_ids: []
   source_evidence_type: original_creator_video
-  doc_path: docs/02-具体生活方法/03-薄肌理论.md
+  doc_path: docs/02-过日子的办法/03-健康与运动.md
+  anchor: lean-muscle-practice
   cost_dimensions:
   - money
   - time
@@ -280,11 +284,12 @@ theories:
   recommendation: 从容易验货、风险可控、确有需要的物品开始，算清维修运费和维护成本。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/02-具体生活方法/04-二手消费.md
+  page: docs/02-过日子的办法/08-消费购物.md
   parent_id: null
   child_ids: []
   source_evidence_type: internet_term_unverified
-  doc_path: docs/02-具体生活方法/04-二手消费.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
+  anchor: shopping-secondhand
   cost_dimensions:
   - money
   - time
@@ -355,12 +360,13 @@ theories:
   recommendation: 按具体场景、所需期限、生活品质与完整成本比较租用和购买；租房可长期高频使用，不套用低频物品的判断。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/02-具体生活方法/05-租万物.md
+  page: docs/02-过日子的办法/08-消费购物.md
   parent_id: null
   child_ids:
   - housing
   source_evidence_type: internet_term_unverified
-  doc_path: docs/02-具体生活方法/05-租万物.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
+  anchor: shopping-renting
   cost_dimensions:
   - money
   - time
@@ -433,11 +439,12 @@ theories:
   recommendation: 用总账比较可行房源，安全和基本居住质量先通过。
   review_status: initial_editorial
   review_note: 按正文列明的条件收录，具体适用性因人而异。
-  page: docs/02-具体生活方法/租万物/01-租房.md
+  page: docs/02-过日子的办法/08-消费购物.md
   parent_id: renting
   child_ids: []
   source_evidence_type: internet_term_unverified
-  doc_path: docs/02-具体生活方法/租万物/01-租房.md
+  doc_path: docs/02-过日子的办法/08-消费购物.md
+  anchor: housing-rental-total
   cost_dimensions:
   - money
   - time
@@ -486,3 +493,4 @@ source_type_definitions:
   guoxue_practice: “过学”依据生活品质判断整理的实践方法；不声称本项目在互联网上首次提出这些做法。
 dimension_note: cost_dimensions 与 quality_dimensions 只标记相关维度，不代表所有成本都下降或所有品质都提高。成本增减与品质变化见 cost_changes、quality_effects、risks
   和 boundaries；不同成本不直接相加，健康与安全底线不作价格交换。
+location_note: page 与 doc_path 保存同一正文文件路径，anchor 定位文件内段落；对应方法通过 theory_id 与此处关联，并指向同一段正文。作者、来源、实践与边界只在该段维护一份，不另建重复理论篇。
